@@ -102,12 +102,12 @@ const booksData = [
   {
     id: 11, title: "Balady a romance", author: "Jan Neruda",
     obdobi: 2,
-    info: { narodnost: "Český", roky: "1834-1891", smer: "MÁJOVCI, český realismus", vydani: "1883", druh: "LYRIKA / EPIKA", zanr: "Básnická SBÍRKA" },
-    dej: ["Sbírka BÁSNÍ - nemá souvislý děj","Balada DĚTSKÁ: matka zabije dítě","Romance HELGOLANDSKÁ: loď v bouři","Balada PAŠIJOVÁ: Kristus na kříži","Romance o KARLU IV.: král staví","Balada ČESKÁ: vlastenecký hrdina"],
-    postavy: { hlavni: [{jmeno:"Různé lyrické postavy",vlastnost:"ARCHETYPY lidských osudů"}], vedlejsi: [{jmeno:"Kristus, Karel IV., matky",funkce:"NOSITELÉ morálních dilemat"}] },
-    temata: { hlavni: "LIDSKÉ osudy mezi láskou a smrtí", motivy: ["VINA a trest","OBĚŤ za vyšší cíl","VLASTENECTVÍ","SMRT jako vykoupení"] },
-    jazyk: { vypravec: "ER-FORMA i ICH-FORMA (střídání)", prostredky: "VERŠOVANÁ forma, refrén, dialog", tropus: "Personifikace: smrt jako POSTAVA", figura: "Refrén: opakování klíčových VERŠŮ" },
-    kontext: { literarni: "MÁJOVCI, česká literatura 19. st.", historicky: "Národní EMANCIPACE, 80. léta 19. st.", inspirace: "Lidová SLOVESNOST a křesťanské motivy", srovnani: ["Kytice (Erben)","Písně kosmické (Neruda)"] }
+    info: { narodnost: "ČESKÁ", roky: "1834-1891", smer: "ČESKÝ REALISMUS, generace MÁJOVCŮ", vydani: "VZNIKU a VYDÁNÍ 1883", druh: "LYRICKO-EPICKÁ", zanr: "Básnická sbírka, BALADY a ROMANCE" },
+    dej: ["Ukřižování JEŽÍŠE, snaha o VYLÉČENÍ", "SMRTKA naláká těžce nemocné DÍTĚ", "Zloděj JOHN zaviní smrt svého ZETĚ", "Svatý PETR sní o NAROZENÍ Páně", "JEŽÍŠ zázračně promění VODU ve VÍNO"],
+    postavy: { hlavni: [{jmeno:"JEŽÍŠ KRISTUS",vlastnost:"Symbol LÁSKY a ODPUŠTĚNÍ"},{jmeno:"KAREL IV.",vlastnost:"MOUDRÝ a spravedlivý VLADAŘ"}], vedlejsi: [{jmeno:"Rytíř PALEČEK",funkce:"VĚRNÝ, chce probouzet NA JAŘE"},{jmeno:"SMRTKA",funkce:"ODVÁDÍ trpící dítě do NEBE"}] },
+    temata: { hlavni: "KONTRAST tradičních hodnot a LIDSKÝCH SLABOSTÍ", motivy: ["KŘESŤANSKÁ VÍRA a biblické LEGENDY","VLASTENECTVÍ a národní HRDOST","SMRT a lidský OSUD","VINA a spravedlivý TREST"] },
+    jazyk: { vypravec: "ER-FORMA, vyprávění ve 3. OSOBĚ", prostredky: "ARCHAISMY, HOVOROVÝ jazyk, METAFORY, INVERZE", tropus: "Přívlastek: „SMAVÝ REK“ rytíř Paleček", figura: "Inverze: „ZVĚDAVY zas k oknu obracejí TVÁŘ“" },
+    kontext: { literarni: "GENERACE MÁJOVCŮ, 2. polovina 19. STOLETÍ", historicky: "RAKOUSKÝ ABSOLUTISMUS a BACHOVA přísná CENZURA", inspirace: "Láska k MATCE a cestování AUTORA", srovnani: ["Básnická sbírka KYTICE (Karel Jaromír Erben)"] }
   },
   {
     id: 12, title: "Farma zvířat", author: "George Orwell",

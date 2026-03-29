@@ -84,11 +84,11 @@ const extraData = {
     }
   },
   11: { // Balady a romance
-    casoprostor: "NADČASOVÝ, různá historická období",
-    misto: "České KRAJINY, biblické prostředí, moře",
+    casoprostor: "Doba KARLA IV. i autorovo 19. STOLETÍ",
+    misto: "Různá NEUPŘESNĚNÁ MÍSTA převážně v ČECHÁCH",
     soucasnici: {
-      cesti: ["Alois Jirásek - Staré pověsti české","Svatopluk Čech - Písně otroka","Jaroslav Vrchlický - Noc na Karlštejně"],
-      svetovi: ["Émile Zola - Germinal","Guy de Maupassant - Kulička","Mark Twain - Dobrodružství Huckleberryho Finna"]
+      cesti: ["Vítězslav HÁLEK - Večerní písně", "Božena NĚMCOVÁ - Babička"],
+      svetovi: ["Charlotte BRONTËOVÁ - Villette", "Arthur CONAN DOYLE - Studie v šarlatové"]
     }
   },
   12: { // Farma zvířat
