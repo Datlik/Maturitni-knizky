@@ -28,6 +28,15 @@
     --badge-text: #9a7d2e;
     --filter-active-bg: #1a1a1a;
     --filter-active-text: #fff;
+    
+    /* Section Colors */
+    --sec-info: #3b82f6; --sec-info-bg: rgba(59, 130, 246, 0.04);
+    --sec-dej: #ef4444; --sec-dej-bg: rgba(239, 68, 68, 0.04);
+    --sec-postavy: #f97316; --sec-postavy-bg: rgba(249, 115, 22, 0.04);
+    --sec-motivy: #eab308; --sec-motivy-bg: rgba(234, 179, 8, 0.04);
+    --sec-jazyk: #22c55e; --sec-jazyk-bg: rgba(34, 197, 94, 0.04);
+    --sec-kontext: #8b5cf6; --sec-kontext-bg: rgba(139, 92, 246, 0.04);
+    --sec-soucasnici: #64748b; --sec-soucasnici-bg: rgba(100, 116, 139, 0.04);
 }
 
 /* === DARK MODE === */
@@ -58,6 +67,15 @@
     --badge-text: #d4b050;
     --filter-active-bg: #e4e2de;
     --filter-active-text: #111114;
+    
+    /* Section Colors Dark */
+    --sec-info: #60a5fa; --sec-info-bg: rgba(96, 165, 250, 0.07);
+    --sec-dej: #f87171; --sec-dej-bg: rgba(248, 113, 113, 0.07);
+    --sec-postavy: #fb923c; --sec-postavy-bg: rgba(251, 146, 60, 0.07);
+    --sec-motivy: #facc15; --sec-motivy-bg: rgba(250, 204, 21, 0.07);
+    --sec-jazyk: #4ade80; --sec-jazyk-bg: rgba(74, 222, 128, 0.07);
+    --sec-kontext: #a78bfa; --sec-kontext-bg: rgba(167, 139, 250, 0.07);
+    --sec-soucasnici: #94a3b8; --sec-soucasnici-bg: rgba(148, 163, 184, 0.07);
 }
 
 [data-theme="dark"] header h1 {
@@ -571,7 +589,10 @@ main {
     border-radius: 16px;
     padding: 1.6rem;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                box-shadow 0.3s ease, 
+                border-color 0.3s ease,
+                background-color 0.3s ease;
     display: flex;
     flex-direction: column;
     height: 220px;
@@ -579,6 +600,17 @@ main {
     overflow: hidden;
     box-shadow: var(--shadow-card);
     animation: fadeInCard 0.4s ease both;
+}
+
+.book-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--accent);
+    background-color: var(--card-bg);
+}
+
+.book-card:active {
+    transform: translateY(-4px) scale(1);
 }
 
 @keyframes fadeInCard {
@@ -592,11 +624,15 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 4px;
     background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.book-card:hover::before {
+    transform: scaleX(1);
 }
 
 .book-card:hover {
@@ -649,6 +685,46 @@ main {
 .book-card:hover .read-more {
     letter-spacing: 2.5px;
     color: var(--accent-hover);
+}
+
+/* === MODAL SECTIONS === */
+.modal-section {
+    position: relative;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--section-color, var(--glass-border));
+    background: var(--section-bg, transparent);
+    transition: all 0.3s ease;
+}
+
+.modal-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--section-color, var(--text-primary));
+    margin-bottom: 1.25rem;
+}
+
+.modal-section h3 svg {
+    flex-shrink: 0;
+    color: var(--section-color);
+}
+
+/* Section Specific Classes */
+.section-info { --section-color: var(--sec-info); --section-bg: var(--sec-info-bg); }
+.section-dej { --section-color: var(--sec-dej); --section-bg: var(--sec-dej-bg); }
+.section-postavy { --section-color: var(--sec-postavy); --section-bg: var(--sec-postavy-bg); }
+.section-motivy { --section-color: var(--sec-motivy); --section-bg: var(--sec-motivy-bg); }
+.section-jazyk { --section-color: var(--sec-jazyk); --section-bg: var(--sec-jazyk-bg); }
+.section-kontext { --section-color: var(--sec-kontext); --section-bg: var(--sec-kontext-bg); }
+.section-soucasnici { --section-color: var(--sec-soucasnici); --section-bg: var(--sec-soucasnici-bg); }
+
+.modal-section p, .modal-section .info-row {
+    position: relative;
+    z-index: 1;
 }
 
 /* === MODAL === */
@@ -744,16 +820,7 @@ main {
     margin-bottom: 0;
 }
 
-.modal-section h3 {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.8rem;
-    border-bottom: 1px solid var(--glass-border);
-    padding-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
+
 
 .modal-section p {
     color: var(--text-secondary);

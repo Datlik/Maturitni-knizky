@@ -48,6 +48,7 @@ const booksData = [
       svetovi: ["George ORWELL - Farma ZVÍŘAT","Franz KAFKA - PROMĚNA"]
     }
   },
+
   {
     id: 2, title: "Věc Makropulos", author: "Karel Čapek",
     obdobi: 4,
@@ -94,6 +95,7 @@ const booksData = [
       svetovi: ["George ORWELL - FARMA ZVÍŘAT","Franz KAFKA - PROMĚNA","George Bernard SHAW - DŮM ZLOMENÝCH SRDCÍ"]
     }
   },
+
   {
     id: 3, title: "Krysař", author: "Viktor Dyk",
     obdobi: 4,
@@ -140,186 +142,7 @@ const booksData = [
       svetovi: ["Franz KAFKA - PROMĚNA","George ORWELL - FARMA ZVÍŘAT"]
     }
   },
-  {
-    id: 4, title: "Malý princ", author: "Antoine de Saint-Exupéry",
-    obdobi: 3,
-    info: { narodnost: "FRANCOUZ", roky: "1900–1944", smer: "MEZIVÁLEČNÁ LITERATURA, realismus, experimentální próza", vydani: "1943", druh: "EPIKA", zanr: "Filozofická POHÁDKA pro dospělé" },
-    casoprostor: "Pravděpodobně 20. STOLETÍ, děj trvá 8 DNÍ",
-    misto: "ZEMĚ (Sahara), různé VESMÍRNÉ PLANETKY (B612)",
-    dej: [
-      "PILOT ztroskotá v poušti, POTKÁVÁ Malého prince",
-      "Princ VYPRÁVÍ o planetce a milované RŮŽI",
-      "Princ CESTUJE, poznává podivné DOSPĚLE na planetách",
-      "NÁVŠTĚVA Země, setkání s HADEM a LIŠKOU",
-      "OCHOČENÍ lišky, pochopení hodnoty pravého PŘÁTELSTVÍ",
-      "Princ se nechá UŠTKNOUT, NÁVRT domů"
-    ],
-    postavy: { 
-      hlavni: [
-        {jmeno:"MALÝ PRINC",vlastnost:"ZVĚDAVÝ a čistý dětský hrdina"},
-        {jmeno:"PILOT",vlastnost:"OSAMĚLÝ dospělý vypravěč a snílek"}
-      ], 
-      vedlejsi: [
-        {jmeno:"RŮŽE",funkce:"PYŠNÁ květina, DŮVOD k princovu návratu"},
-        {jmeno:"LIŠKA",funkce:"MOUDRÁ, UČÍ prince pravému PŘÁTELSTVÍ"},
-        {jmeno:"HAD",funkce:"Uštknutí NAVRACÍ prince na jeho planetu"}
-      ] 
-    },
-    temata: { 
-      hlavni: "STŘET dětského světa s DOSPĚLÝMI", 
-      motivy: ["LÁSKA a pravé PŘÁTELSTVÍ","Hledání SMYSLU ŽIVOTA","Ztracená DĚTSKÁ FANTAZIE","Lidské VLASTNOSTI a NEDOSTATKY"] 
-    },
-    jazyk: { 
-      vypravec: "ICH-FORMA (pilot) a ER-FORMA (princ)", 
-      prostredky: "SPISOVNÝ jazyk, ZDROBNĚLINY, krátké věty, dialogy", 
-      tropus: "PERSONIFIKACE: „HVĚZDY se tiše SMĚJÍ.“", 
-      figura: "APOZIOPEZE: „Prosím pěkně... NAKRESLI mi beránka...“" 
-    },
-    kontext: { 
-      literarni: "Francouzská MEZIVÁLEČNÁ a EXPERIMENTÁLNÍ próza", 
-      historicky: "Napsáno za 2. SVĚTOVÉ VÁLKY v USA", 
-      inspirace: "Vlastní HAVÁRIE autora v africké POUŠTI", 
-      srovnani: ["Romain Rolland - novela PETR A LUCIE"] 
-    },
-    soucasnici: {
-      cesti: ["KAREL ČAPEK - dramata R.U.R., BÍLÁ NEMOC","KAREL POLÁČEK - BYLO NÁS PĚT","JIŘÍ WOLKER - TĚŽKÁ HODINA"],
-      svetovi: ["ROMAIN ROLLAND - PETR A LUCIE","E. M. REMARQUE - NA ZÁPADNÍ FRONTĚ KLID","HENRI BARBUSSE - OHEŇ"]
-    }
-  },
-  {
-    id: 5, title: "Tyrolské elegie", author: "Karel Havlíček Borovský",
-    obdobi: 2,
-    info: { narodnost: "ČECH", roky: "1821–1856", smer: "REALISMUS, národní obrození, 19. STOLETÍ", vydani: "1861", druh: "LYRIKO-EPIKA", zanr: "Satirická báseň, ELEGIE" },
-    casoprostor: "PROSINEC 1851, období BACHOVA ABSOLUTISMU",
-    misto: "NĚMECKÝ BROD, strmé ALPY, BRIXEN",
-    dej: [
-      "NOČNÍ ZATČENÍ policií a LOUČENÍ doma",
-      "Nucený ODJEZD do vyhnanství s Dederou",
-      "Cesta přes Jihlavu, VZPOMÍNKY u kostela",
-      "SPLAŠENÍ KONÍ na strmé cestě ALPAMI",
-      "ZBABĚLÝ ÚTĚK strážníků ze splašeného vozu",
-      "PŘÍJEZD do BRIXENU a policejní dohled"
-    ],
-    postavy: { 
-      hlavni: [
-        {jmeno:"K. H. Borovský",vlastnost:"ODVÁŽNÝ, IRONICKÝ"}
-      ], 
-      vedlejsi: [
-        {jmeno:"Franz DEDERA",funkce:"policejní komisař, ŘÍDÍ PŘEVOZ"},
-        {jmeno:"MĚSÍČEK",funkce:"jediný přítel, NASLOUCHÁ PŘÍBĚHU"}
-      ] 
-    },
-    temata: { 
-      hlavni: "KRITIKA rakouského absolutismu a NESVOBODY", 
-      motivy: ["VYHNANSTVÍ","LOUČENÍ","ZBABĚLOST","STRACH","NOC"] 
-    },
-    jazyk: { 
-      vypravec: "ICH-FORMA, autobiografické, 1. OSOBA", 
-      prostredky: "HOVOROVÝ JAZYK, ironie, satira, ARCHAISMY", 
-      tropus: "PERSONIFIKACE: „kostelíček… na mne hledí“", 
-      figura: "INVERZE: „tam Dedera koupil mělnického čtyry lahvice“" 
-    },
-    kontext: { 
-      literarni: "Počátky REALISMUS, fáze NÁRODNÍHO OBROZENÍ", 
-      historicky: "BACHŮV ABSOLUTISMUS v Rakousko-Uhersku", 
-      inspirace: "VLASTNÍ ZÁŽITEK násilné nespravedlivé DEPORTACE", 
-      srovnani: ["Žalozpěvy (Ovidius)"] 
-    },
-    soucasnici: {
-      cesti: ["Božena NĚMCOVÁ - BABIČKA","K. J. ERBEN - KYTICE","J. K. TYL - STRAKONICKÝ DUDÁK"],
-      svetovi: ["Victor HUGO - BÍDNÍCI","Charles DICKENS - OLIVER TWIST","L. N. TOLSTOJ - VOJNA A MÍR"]
-    }
-  },
-  {
-    id: 6, title: "Stařec a moře", author: "Ernest Hemingway",
-    obdobi: 3,
-    info: { narodnost: "AMERIČAN", roky: "1899–1961", smer: "ZTRACENÁ GENERACE, meziválečná americká literatura", vydani: "1952", druh: "EPIKA", zanr: "Novela" },
-    casoprostor: "ZÁŘÍ, 40. léta, KUBA (TŘI DNY)",
-    misto: "RYBÁŘSKÁ VESNICE, hospoda TERASA, ŠIRÉ MOŘE",
-    dej: [
-      "SANTIAGO loví 84 dní BEZ ÚLOVKU",
-      "Vyplouvá SÁM daleko na širé MOŘE",
-      "Chytí OBŘÍHO marlina, vyčerpávající SOUBOJ",
-      "Rybu UDOLÁ a PŘIVÁŽE k lodi",
-      "Cestou zpět ÚTOČÍ a žerou ŽRALOCI",
-      "Návrat do přístavu POUZE S KOSTROU"
-    ],
-    postavy: { 
-      hlavni: [
-        {jmeno:"SANTIAGO",vlastnost:"starý RYBÁŘ, mimořádně HOUŽEVNATÝ"}
-      ], 
-      vedlejsi: [
-        {jmeno:"MANOLIN",funkce:"chlapec, POMOCNÍK a citová OPORA"},
-        {jmeno:"MARTIN",funkce:"hostinský, poskytuje JÍDLO"}
-      ] 
-    },
-    temata: { 
-      hlavni: "NEKONEČNÝ ZÁPAS člověka s PŘÍRODOU", 
-      motivy: ["TRAGICKÁ OSAMĚLOST a lidská STATEČNOST","KŘESŤANSKÁ SYMBOLIKA (lano jako KŘÍŽ)","MOŘE (příroda) a ŽRALOCI (zlo)","KOLOBĚH života"] 
-    },
-    jazyk: { 
-      vypravec: "Vševědoucí vypravěč, ER-FORMA (3. osoba)", 
-      prostredky: "METODA LEDOVCE, strohé věty, ŠPANĚLSKÉ VÝRAZY", 
-      tropus: "PŘIROVNÁNÍ: „zužoval se jako PAPÍR“", 
-      figura: "APOSTROFA: „Vzpamatuj se RUKO!“" 
-    },
-    kontext: { 
-      literarni: "ZTRACENÁ GENERACE, americká meziválečná PRÓZA", 
-      historicky: "Poválečná doba, přelom 40. a 50. LET", 
-      inspirace: "Autorova tvůrčí KRIZE a pobyt na KUBĚ", 
-      srovnani: ["E. M. Remarque - Na západní frontě KLID","J. Škvorecký - ZBABĚLCI"] 
-    },
-    soucasnici: {
-      cesti: ["Karel Čapek - BÍLÁ NEMOC","Josef Škvorecký - ZBABĚLCI","Bohumil Hrabal - OSTŘE SLEDOVANÉ VLAKY"],
-      svetovi: ["E. M. Remarque - NA ZÁPADNÍ frontě klid","F. S. Fitzgerald - VELKÝ GATSBY","John Steinbeck - O MYŠÍCH a lidech"]
-    }
-  },
-  {
-    id: 7, title: "Ostře sledované vlaky", author: "Bohumil Hrabal",
-    obdobi: 4,
-    info: { narodnost: "ČESKÝ", roky: "1914–1997", smer: "ČESKÁ PRÓZA 2. POLOVINY 20. STOLETÍ", vydani: "1965", druh: "EPIKA", zanr: "Tragikomická novela" },
-    casoprostor: "ÚNOR 1945, konec 2. SVĚTOVÉ VÁLKY",
-    misto: "NÁDRAŽÍ Kostomlaty, PROTEKTORÁT Čechy a Morava",
-    dej: [
-      "NÁVRT Miloše po NEÚSPĚŠNÉ SEBEVRAŽDĚ",
-      "ZÁŠKOLÁK Miloš SLEDUJE německé transporty",
-      "HUBIČKA PLÁNUJE ZNIČIT MUNIČNÍ VLAK",
-      "ODBOJÁŘKA Viktoria PŘINÁŠÍ BOMBU",
-      "Viktoria ZBAVUJE Miloše PANICCTVÍ",
-      "Miloš VHAZUJE BOMBU, ZMÍRÁ s Němcem"
-    ],
-    postavy: { 
-      hlavni: [
-        {jmeno:"MILOŠ HRMA",vlastnost:"CITLIVÝ a LÍTOSTIVÝ"},
-        {jmeno:"HUBIČKA",vlastnost:"VÝPRAVČÍ, INICIÁTOR odboje"}
-      ], 
-      vedlejsi: [
-        {jmeno:"PŘEDNOSTA",funkce:"AMBICIÓZNÍ CHOVATEL holubů"},
-        {jmeno:"VIKTORIA FREIE",funkce:"ODBOJÁŘKA, PŘINÁŠÍ bombu"},
-        {jmeno:"MÁŠA",funkce:"Milošova PŘÍTELKYNĚ"}
-      ] 
-    },
-    temata: { 
-      hlavni: "KRITIKA nesmyslnosti VÁLKY", 
-      motivy: ["VOJÁK a VÁLKA","LÁSKA a SMRT","RAZÍTKA na zadnici","DOSPÍVÁNÍ a SEXUALITA"] 
-    },
-    jazyk: { 
-      vypravec: "ICH-FORMA, 1. OSOBA, RETROSPEKTIVA", 
-      prostredky: "SPISOVNÁ i NESPISOVNÁ čeština, GERMANISMY, SLANG", 
-      tropus: "PŘIROVNÁNÍ: „zvadl jako LILIUM“", 
-      figura: "APOSIOPESE: „jdu k vám o radu…“" 
-    },
-    kontext: { 
-      literarni: "DRUHÁ VLNA VÁLEČNÉ PRÓZY", 
-      historicky: "PROTEKTORÁT, blížící se KONEC VÁLKY", 
-      inspirace: "HRABAL PRACOVAL jako VÝPRAVČÍ v Kostomlatech", 
-      srovnani: ["Romeo, Julie a tma (Jan Otčenášek)"] 
-    },
-    soucasnici: {
-      cesti: ["Jan OTČENÁŠEK - ROMEO, JULIE A TMA","Karel ČAPEK - BÍLÁ NEMOC","Karel POLÁČEK - BYLO NÁS PĚT"],
-      svetovi: ["George ORWELL - FARMA ZVÍŘAT","Ernest HEMINGWAY - STAŘEC A MOŘE","Romain ROLLAND - PETR A LUCIE"]
-    }
-  },
+
   {
     id: 8, title: "Vražda v Orient expresu", author: "Agatha Christie",
     obdobi: 3,
@@ -366,6 +189,144 @@ const booksData = [
       svetovi: ["ERNEST HEMINGWAY - Stařec a moře","REMARQUE - Na západní frontě klid"]
     }
   },
+
+  {
+    id: 5, title: "Tyrolské elegie", author: "Karel Havlíček Borovský",
+    obdobi: 2,
+    info: { narodnost: "ČECH", roky: "1821–1856", smer: "REALISMUS, národní obrození, 19. STOLETÍ", vydani: "1861", druh: "LYRIKO-EPIKA", zanr: "Satirická báseň, ELEGIE" },
+    casoprostor: "PROSINEC 1851, období BACHOVA ABSOLUTISMU",
+    misto: "NĚMECKÝ BROD, strmé ALPY, BRIXEN",
+    dej: [
+      "NOČNÍ ZATČENÍ policií a LOUČENÍ doma",
+      "Nucený ODJEZD do vyhnanství s Dederou",
+      "Cesta přes Jihlavu, VZPOMÍNKY u kostela",
+      "SPLAŠENÍ KONÍ na strmé cestě ALPAMI",
+      "ZBABĚLÝ ÚTĚK strážníků ze splašeného vozu",
+      "PŘÍJEZD do BRIXENU a policejní dohled"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"K. H. Borovský",vlastnost:"ODVÁŽNÝ, IRONICKÝ"}
+      ], 
+      vedlejsi: [
+        {jmeno:"Franz DEDERA",funkce:"policejní komisař, ŘÍDÍ PŘEVOZ"},
+        {jmeno:"MĚSÍČEK",funkce:"jediný přítel, NASLOUCHÁ PŘÍBĚHU"}
+      ] 
+    },
+    temata: { 
+      hlavni: "KRITIKA rakouského absolutismu a NESVOBODY", 
+      motivy: ["VYHNANSTVÍ","LOUČENÍ","ZBABĚLOST","STRACH","NOC"] 
+    },
+    jazyk: { 
+      vypravec: "ICH-FORMA, autobiografické, 1. OSOBA", 
+      prostredky: "HOVOROVÝ JAZYK, ironie, satira, ARCHAISMY", 
+      tropus: "PERSONIFIKACE: „kostelíček… na mne hledí“", 
+      figura: "INVERZE: „tam Dedera koupil mělnického čtyry lahvice“" 
+    },
+    kontext: { 
+      literarni: "Počátky REALISMUS, fáze NÁRODNÍHO OBROZENÍ", 
+      historicky: "BACHŮV ABSOLUTISMUS v Rakousko-Uhersku", 
+      inspirace: "VLASTNÍ ZÁŽITEK násilné nespravedlivé DEPORTACE", 
+      srovnani: ["Žalozpěvy (Ovidius)"] 
+    },
+    soucasnici: {
+      cesti: ["Božena NĚMCOVÁ - BABIČKA","K. J. ERBEN - KYTICE","J. K. TYL - STRAKONICKÝ DUDÁK"],
+      svetovi: ["Victor HUGO - BÍDNÍCI","Charles DICKENS - OLIVER TWIST","L. N. TOLSTOJ - VOJNA A MÍR"]
+    }
+  },
+
+  {
+    id: 6, title: "Stařec a moře", author: "Ernest Hemingway",
+    obdobi: 3,
+    info: { narodnost: "AMERIČAN", roky: "1899–1961", smer: "ZTRACENÁ GENERACE, meziválečná americká literatura", vydani: "1952", druh: "EPIKA", zanr: "Novela" },
+    casoprostor: "ZÁŘÍ, 40. léta, KUBA (TŘI DNY)",
+    misto: "RYBÁŘSKÁ VESNICE, hospoda TERASA, ŠIRÉ MOŘE",
+    dej: [
+      "SANTIAGO loví 84 dní BEZ ÚLOVKU",
+      "Vyplouvá SÁM daleko na širé MOŘE",
+      "Chytí OBŘÍHO marlina, vyčerpávající SOUBOJ",
+      "Rybu UDOLÁ a PŘIVÁŽE k lodi",
+      "Cestou zpět ÚTOČÍ a žerou ŽRALOCI",
+      "Návrat do přístavu POUZE S KOSTROU"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"SANTIAGO",vlastnost:"starý RYBÁŘ, mimořádně HOUŽEVNATÝ"}
+      ], 
+      vedlejsi: [
+        {jmeno:"MANOLIN",funkce:"chlapec, POMOCNÍK a citová OPORA"},
+        {jmeno:"MARTIN",funkce:"hostinský, poskytuje JÍDLO"}
+      ] 
+    },
+    temata: { 
+      hlavni: "NEKONEČNÝ ZÁPAS člověka s PŘÍRODOU", 
+      motivy: ["TRAGICKÁ OSAMĚLOST a lidská STATEČNOST","KŘESŤANSKÁ SYMBOLIKA (lano jako KŘÍŽ)","MOŘE (příroda) a ŽRALOCI (zlo)","KOLOBĚH života"] 
+    },
+    jazyk: { 
+      vypravec: "Vševědoucí vypravěč, ER-FORMA (3. osoba)", 
+      prostredky: "METODA LEDOVCE, strohé věty, ŠPANĚLSKÉ VÝRAZY", 
+      tropus: "PŘIROVNÁNÍ: „zužoval se jako PAPÍR“", 
+      figura: "APOSTROFA: „Vzpamatuj se RUKO!“" 
+    },
+    kontext: { 
+      literarni: "ZTRACENÁ GENERACE, americká meziválečná PRÓZA", 
+      historicky: "Poválečná doba, přelom 40. a 50. LET", 
+      inspirace: "Autorova tvůrčí KRIZE a pobyt na KUBĚ", 
+      srovnani: ["E. M. Remarque - Na západní frontě KLID","J. Škvorecký - ZBABĚLCI"] 
+    },
+    soucasnici: {
+      cesti: ["Karel Čapek - BÍLÁ NEMOC","Josef Škvorecký - ZBABĚLCI","Bohumil Hrabal - OSTŘE SLEDOVANÉ VLAKY"],
+      svetovi: ["E. M. Remarque - NA ZÁPADNÍ frontě klid","F. S. Fitzgerald - VELKÝ GATSBY","John Steinbeck - O MYŠÍCH a lidech"]
+    }
+  },
+
+  {
+    id: 7, title: "Ostře sledované vlaky", author: "Bohumil Hrabal",
+    obdobi: 4,
+    info: { narodnost: "ČESKÝ", roky: "1914–1997", smer: "ČESKÁ PRÓZA 2. POLOVINY 20. STOLETÍ", vydani: "1965", druh: "EPIKA", zanr: "Tragikomická novela" },
+    casoprostor: "ÚNOR 1945, konec 2. SVĚTOVÉ VÁLKY",
+    misto: "NÁDRAŽÍ Kostomlaty, PROTEKTORÁT Čechy a Morava",
+    dej: [
+      "NÁVRT Miloše po NEÚSPĚŠNÉ SEBEVRAŽDĚ",
+      "ZÁŠKOLÁK Miloš SLEDUJE německé transporty",
+      "HUBIČKA PLÁNUJE ZNIČIT MUNIČNÍ VLAK",
+      "ODBOJÁŘKA Viktoria PŘINÁŠÍ BOMBU",
+      "Viktoria ZBAVUJE Miloše PANICCTVÍ",
+      "Miloš VHAZUJE BOMBU, ZMÍRÁ s Němcem"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"MILOŠ HRMA",vlastnost:"CITLIVÝ a LÍTOSTIVÝ"},
+        {jmeno:"HUBIČKA",vlastnost:"VÝPRAVČÍ, INICIÁTOR odboje"}
+      ], 
+      vedlejsi: [
+        {jmeno:"PŘEDNOSTA",funkce:"AMBICIÓZNÍ CHOVATEL holubů"},
+        {jmeno:"VIKTORIA FREIE",funkce:"ODBOJÁŘKA, PŘINÁŠÍ bombu"},
+        {jmeno:"MÁŠA",funkce:"Milošova PŘÍTELKYNĚ"}
+      ] 
+    },
+    temata: { 
+      hlavni: "KRITIKA nesmyslnosti VÁLKY", 
+      motivy: ["VOJÁK a VÁLKA","LÁSKA a SMRT","RAZÍTKA na zadnici","DOSPÍVÁNÍ a SEXUALITA"] 
+    },
+    jazyk: { 
+      vypravec: "ICH-FORMA, 1. OSOBA, RETROSPEKTIVA", 
+      prostredky: "SPISOVNÁ i NESPISOVNÁ čeština, GERMANISMY, SLANG", 
+      tropus: "PŘIROVNÁNÍ: „zvadl jako LILIUM“", 
+      figura: "APOSIOPESE: „jdu k vám o radu…“" 
+    },
+    kontext: { 
+      literarni: "DRUHÁ VLNA VÁLEČNÉ PRÓZY", 
+      historicky: "PROTEKTORÁT, blížící se KONEC VÁLKY", 
+      inspirace: "HRABAL PRACOVAL jako VÝPRAVČÍ v Kostomlatech", 
+      srovnani: ["Romeo, Julie a tma (Jan Otčenášek)"] 
+    },
+    soucasnici: {
+      cesti: ["Jan OTČENÁŠEK - ROMEO, JULIE A TMA","Karel ČAPEK - BÍLÁ NEMOC","Karel POLÁČEK - BYLO NÁS PĚT"],
+      svetovi: ["George ORWELL - FARMA ZVÍŘAT","Ernest HEMINGWAY - STAŘEC A MOŘE","Romain ROLLAND - PETR A LUCIE"]
+    }
+  },
+
   {
     id: 9, title: "Saturnin", author: "Zdeněk Jirotka",
     obdobi: 4,
@@ -414,6 +375,7 @@ const booksData = [
       svetovi: ["George ORWELL - FARMA ZVÍŘAT","Ernest HEMINGWAY - STAŘEC A MOŘE"]
     }
   },
+
   {
     id: 10, title: "Lakomec", author: "Molière",
     obdobi: 1,
@@ -464,6 +426,7 @@ const booksData = [
       svetovi: ["Pierre CORNEILLE - CID","Jean RACINE - FAIDRA","Jean de la FONTAINE - BAJKY"]
     }
   },
+
   {
     id: 11, title: "Balady a romance", author: "Jan Neruda",
     obdobi: 2,
@@ -480,6 +443,7 @@ const booksData = [
       svetovi: ["Charlotte BRONTËOVÁ - Villette", "Arthur CONAN DOYLE - Studie v šarlatové"]
     }
   },
+
   {
     id: 12, title: "Farma zvířat", author: "George Orwell",
     obdobi: 3,
@@ -527,6 +491,7 @@ const booksData = [
       svetovi: ["Ray BRADBURY - Marťanská kronika","Isaac ASIMOV - Já, robot","Albert CAMUS - Cizinec"]
     }
   },
+
   {
     id: 13, title: "Bylo nás pět", author: "Karel Poláček",
     obdobi: 4,
@@ -575,9 +540,11 @@ const booksData = [
       svetovi: []
     }
   },
+
   {
     id: 14, title: "Piková dáma", author: "Alexandr Sergejevič Puškin",
     obdobi: 2,
+    info: { narodnost: "RUSKÝ", roky: "1799\u20131837", smer: "Rusk\u00fd ROMANTISMUS, z\u00e1klady realismu", vydani: "1834", druh: "EPIKA", zanr: "Fantaskn\u00ed NOVELA / POV\u00cdDKA" },
     casoprostor: "POČÁTEK 19. st., carské Rusko",
     misto: "PETROHRAD, salóny, dům hraběnky, herny",
     dej: ["Důstojník HERMANN touží po BOHATSTVÍ","Zjistí tajemství STARÉ hraběnky (3 karty)","VNIKNE k hraběnce, ta umírá STRACHEM","Přízrak hraběnky mu prozradí: 3, 7, ESO","Dvakrát VYHRAJE, ale třetí karta...","Místo esa vytáhne PIKOVOU DÁMU - zešílí"],
@@ -590,21 +557,71 @@ const booksData = [
       svetovi: ["Honoré de Balzac - Otec Goriot","Victor Hugo - Chrám Matky Boží","Nikolaj Gogol - Revizor"]
     }
   },
+
   {
     id: 15, title: "Petr a Lucie", author: "Romain Rolland",
     obdobi: 3,
-    casoprostor: "LEDEN-BŘEZEN 1918, 1. sv. válka",
-    misto: "Bombardovaná PAŘÍŽ, metro, kostel",
-    dej: ["PETR potká LUCII při náletu v metru","Oba hledají ÚNIK z hrůz 1. sv. války","Postupně se do sebe ZAMILUJÍ","Lucie je CHUDÁ malířka, Petr z buržoazie","Plánují SPOLEČNOU budoucnost po válce","Na Velký pátek oba ZAHYNOU v kostele"],
-    postavy: { hlavni: [{jmeno:"Petr",vlastnost:"CITLIVÝ student, odpůrce války"},{jmeno:"Lucie",vlastnost:"NĚŽNÁ chudá malířka"}], vedlejsi: [{jmeno:"Filip (bratr Petra)",funkce:"VOJÁK, cynický realista"}] },
-    temata: { hlavni: "LÁSKA jako jediná hodnota proti válce", motivy: ["VÁLKA ničí nevinné","MLÁDÍ zmařené válkou","UMĚNÍ jako útěk","SMRT milenců = marnost války"] },
-    jazyk: { vypravec: "ER-FORMA, 3. osoba, lyrizovaná próza", prostredky: "POETICKÝ jazyk, kontrasty, symboly", tropus: "Symbol: kostel = FALEŠNÉ útočiště", figura: "Kontrast: LÁSKA x válečná ZKÁZA" },
-    kontext: { literarni: "Francouzský HUMANISMUS, Nobelova cena 1915", historicky: "1. SVĚTOVÁ VÁLKA, bombardování Paříže", inspirace: "Rollandův PACIFISMUS a odpor k válce", srovnani: ["Na západní frontě klid (Remarque)","Romeo a Julie (Shakespeare)"] },
+    info: { narodnost: "FRANCIE", roky: "1866\u20131944", smer: "Sv\u011btov\u00e1 MEZIV\u00c1LE\u010cN\u00c1 LITERATURA, realismus", vydani: "VZNIKU a VYD\u00c1N\u00cd 1920", druh: "EPIKA, protiv\u00e1le\u010dn\u00e1 milostn\u00e1 NOVELA", zanr: "NOVELA" },
+    casoprostor: "LEDEN-B\u0158EZEN 1918, 1. sv. v\u00e1lka",
+    misto: "Bombardovan\u00e1 PA\u0158\u00cd\u017d, metro, kostel",
+    dej: ["PETR potk\u00e1 LUCII p\u0159i n\u00e1letu v metru","Oba hledaj\u00ed \u00daNIK z hr\u016fz 1. sv. v\u00e1lky","Postupn\u011b se do sebe ZAMILUJ\u00cd","Lucie je CHUD\u00c1 mal\u00ed\u0159ka, Petr z bur\u017eoazie","Pl\u00e1nuj\u00ed SPOLE\u010cN_OU budoucnost po v\u00e1lce","Na Velk\u00fd p\u00e1tek oba ZAHYNOU v kostele"],
+    postavy: { hlavni: [{jmeno:"Petr",vlastnost:"CITLIV\u00dd student, odp\u016frce v\u00e1lky"},{jmeno:"Lucie",vlastnost:"N\u011a\u017dN\u00c1 chud\u00e1 mal\u00ed\u0159ka"}], vedlejsi: [{jmeno:"Filip (bratr Petra)",funkce:"VOJ\u00c1K, cynick\u00fd realista"}] },
+    temata: { hlavni: "L\u00c1SKA jako jedin\u00e1 hodnota proti v\u00e1lce", motivy: ["V\u00c1LKA ni\u010d\u00ed nevinn\u00e9","ML\u00c1D\u00cd zma\u0159en\u00e9 v\u00e1lkou","UM\u011aN\u00cd jako \u00fat\u011bk","SMRT milenc\u016f = marnost v\u00e1lky"] },
+    jazyk: { vypravec: "ER-FORMA, 3. osoba, lyrizovan\u00e1 pr\u00f3za", prostredky: "POETICK\u00dd jazyk, kontrasty, symboly", tropus: "Symbol: kostel = FALE\u0160N\u00c9 \u00fato\u010di\u0161t\u011b", figura: "Kontrast: L\u00c1SKA x v\u00e1le\u010dn\u00e1 ZK\u00c1ZA" },
+    kontext: { literarni: "Francouzsk\u00fd HUMANISMUS, Nobelova cena 1915", historicky: "1. SV\u011aTOV\u00c1 V\u00c1LKA, bombardov\u00e1n\u00ed Pa\u0159\u00ed\u017ee", inspirace: "Rolland\u016fv PACIFISMUS a odpor k v\u00e1lce", srovnani: ["Na z\u00e1padn\u00ed front\u011b klid (Remarque)","Romeo a Julie (Shakespeare)"] },
     soucasnici: {
-      cesti: ["Karel Čapek - R.U.R.","Jaroslav Hašek - Osudy dobrého vojáka Švejka","Viktor Dyk - Krysař"],
-      svetovi: ["E. M. Remarque - Na západní frontě klid","Ernest Hemingway - Sbohem, armádo","Thomas Mann - Kouzelný vrch"]
+      cesti: ["Karel \u010capek - R.U.R.","Jaroslav Ha\u0161ek - Osudy dobr\u00e9ho vojsk\u00e1 \u0160vejka","Viktor Dyk - Krysa\u0159"],
+      svetovi: ["E. M. Remarque - Na z\u00e1padn\u00ed front\u011b klid","Ernest Hemingway - Sbohem, arm\u00e1do","Thomas Mann - Kouzeln\u00fd vrch"]
     }
   },
+
+  {
+    id: 4, title: "Malý princ", author: "Antoine de Saint-Exupéry",
+    obdobi: 3,
+    info: { narodnost: "FRANCOUZ", roky: "1900–1944", smer: "MEZIVÁLEČNÁ LITERATURA, realismus, experimentální próza", vydani: "1943", druh: "EPIKA", zanr: "Filozofická POHÁDKA pro dospělé" },
+    casoprostor: "Pravděpodobně 20. STOLETÍ, děj trvá 8 DNÍ",
+    misto: "ZEMĚ (Sahara), různé VESMÍRNÉ PLANETKY (B612)",
+    dej: [
+      "PILOT ztroskotá v poušti, POTKÁVÁ Malého prince",
+      "Princ VYPRÁVÍ o planetce a milované RŮŽI",
+      "Princ CESTUJE, poznává podivné DOSPĚLE na planetách",
+      "NÁVŠTĚVA Země, setkání s HADEM a LIŠKOU",
+      "OCHOČENÍ lišky, pochopení hodnoty pravého PŘÁTELSTVÍ",
+      "Princ se nechá UŠTKNOUT, NÁVRT domů"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"MALÝ PRINC",vlastnost:"ZVĚDAVÝ a čistý dětský hrdina"},
+        {jmeno:"PILOT",vlastnost:"OSAMĚLÝ dospělý vypravěč a snílek"}
+      ], 
+      vedlejsi: [
+        {jmeno:"RŮŽE",funkce:"PYŠNÁ květina, DŮVOD k princovu návratu"},
+        {jmeno:"LIŠKA",funkce:"MOUDRÁ, UČÍ prince pravému PŘÁTELSTVÍ"},
+        {jmeno:"HAD",funkce:"Uštknutí NAVRACÍ prince na jeho planetu"}
+      ] 
+    },
+    temata: { 
+      hlavni: "STŘET dětského světa s DOSPĚLÝMI", 
+      motivy: ["LÁSKA a pravé PŘÁTELSTVÍ","Hledání SMYSLU ŽIVOTA","Ztracená DĚTSKÁ FANTAZIE","Lidské VLASTNOSTI a NEDOSTATKY"] 
+    },
+    jazyk: { 
+      vypravec: "ICH-FORMA (pilot) a ER-FORMA (princ)", 
+      prostredky: "SPISOVNÝ jazyk, ZDROBNĚLINY, krátké věty, dialogy", 
+      tropus: "PERSONIFIKACE: „HVĚZDY se tiše SMĚJÍ.“", 
+      figura: "APOZIOPEZE: „Prosím pěkně... NAKRESLI mi beránka...“" 
+    },
+    kontext: { 
+      literarni: "Francouzská MEZIVÁLEČNÁ a EXPERIMENTÁLNÍ próza", 
+      historicky: "Napsáno za 2. SVĚTOVÉ VÁLKY v USA", 
+      inspirace: "Vlastní HAVÁRIE autora v africké POUŠTI", 
+      srovnani: ["Romain Rolland - novela PETR A LUCIE"] 
+    },
+    soucasnici: {
+      cesti: ["KAREL ČAPEK - dramata R.U.R., BÍLÁ NEMOC","KAREL POLÁČEK - BYLO NÁS PĚT","JIŘÍ WOLKER - TĚŽKÁ HODINA"],
+      svetovi: ["ROMAIN ROLLAND - PETR A LUCIE","E. M. REMARQUE - NA ZÁPADNÍ FRONTĚ KLID","HENRI BARBUSSE - OHEŇ"]
+    }
+  },
+
   {
     id: 16, title: "Romeo a Julie", author: "William Shakespeare",
     obdobi: 1,
@@ -650,6 +667,7 @@ const booksData = [
       svetovi: ["Miguel de CERVANTES - DON QUIJOTE","Lope de VEGA - FUENTE OVEJUNA"]
     }
   },
+
   {
     id: 17, title: "Vyšetřování ztráty třídní knihy", author: "Ladislav Smoljak, Zdeněk Svěrák",
     obdobi: 4,
@@ -696,6 +714,7 @@ const booksData = [
       svetovi: []
     }
   },
+
   {
     id: 18, title: "O myších a lidech", author: "John Steinbeck",
     obdobi: 3,
@@ -744,6 +763,7 @@ const booksData = [
       svetovi: ["F. S. FITZGERALD - VELKÝ GATSBY","Ernest HEMINGWAY - STAŘEC A MOŘE","W. FAULKNER - ABSOLÓNE, ABSOLÓNE!"]
     }
   },
+
   {
     id: 19, title: "Rozmarné léto", author: "Vladislav Vančura",
     obdobi: 4,
@@ -791,6 +811,7 @@ const booksData = [
       svetovi: ["Franz KAFKA - PROCES","Egon Erwin KISCH - PRAŽSKÝ PITAVAL"]
     }
   },
+
   {
     id: 20, title: "Noc na Karlštejně", author: "Jaroslav Vrchlický",
     obdobi: 2,
@@ -807,4 +828,5 @@ const booksData = [
       svetovi: ["Victor Hugo - Bídníci","Henrik Ibsen - Domečkové","Fjodor Dostojevskij - Bratři Karamazovi"]
     }
   }
+
 ];

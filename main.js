@@ -585,8 +585,19 @@ quizToggle.addEventListener('click', openQuiz);
 closeQuizBtn.addEventListener('click', closeQuiz);
 quizModal.addEventListener('click', function(e) { if (e.target === quizModal) closeQuiz(); });
 
+// === IKONY PRO SEKCE (SVG) ===
+const SECTION_ICONS = {
+    info: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>',
+    dej: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h8"/><path d="M9 11h8"/><path d="M9 15h8"/></svg>',
+    postavy: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    motivy: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.37-1.74.37-2.11 0-1.89-1.55-3.41-3.46-3.41s-3.46 1.52-3.46 3.41c0 .37.19 1.13.37 2.11C9.24 15.82 11 16 12 16s2.76-.18 3.09-2z"/><path d="M12 2v2"/><path d="M5 8l1.4 1.4"/><path d="M1 12h2"/><path d="M5 16l1.4-1.4"/><path d="M19 8l-1.4 1.4"/><path d="M23 12h-2"/><path d="M19 16l-1.4-1.4"/></svg>',
+    jazyk: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l5 5"/><path d="M9.5 9.5L11 11"/></svg>',
+    kontext: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>'
+};
+
 // === DETAIL KNIHY ===
 function openDetail(book) {
+    var isNewStyle = true;
     var ph = book.postavy.hlavni.map(function(p) { return '<strong>' + p.jmeno + '</strong> \u2013 ' + p.vlastnost; }).join('<br>');
     var pv = book.postavy.vedlejsi.map(function(p) { return '<strong>' + p.jmeno + '</strong> \u2013 ' + p.funkce; }).join('<br>');
     var dejH = book.dej.map(function(d) { return '<span class="timeline-step">\u2192 ' + d + '</span>'; }).join('');
@@ -603,34 +614,53 @@ function openDetail(book) {
     if (book.soucasnici) {
         var cestiH = book.soucasnici.cesti.map(function(s) { return '<span class="timeline-step">\u2192 ' + s + '</span>'; }).join('');
         var svetH = book.soucasnici.svetovi.map(function(s) { return '<span class="timeline-step">\u2192 ' + s + '</span>'; }).join('');
+        
+        var soucasniciSectionClass = isNewStyle ? 'modal-section section-soucasnici' : 'modal-section';
+        var soucasniciTitle = isNewStyle ? SECTION_ICONS.kontext + ' Sou\u010dasn\u00edci' : '\uD83D\uDC65 Sou\u010dasn\u00edci';
+        
         soucasniciHtml =
-            '<div class="modal-section"><h3>\uD83D\uDC65 Sou\u010dasn\u00edci</h3>' +
+            '<div class="' + soucasniciSectionClass + '"><h3>' + soucasniciTitle + '</h3>' +
             '<p><strong>\u010Ce\u0161t\u00ed:</strong></p><div class="timeline">' + cestiH + '</div>' +
             '<p style="margin-top:1rem;"><strong>Sv\u011btov\u00ed:</strong></p><div class="timeline">' + svetH + '</div></div>';
     }
 
+    var sections = [
+        { id: 'info', icon: SECTION_ICONS.info, emoji: '\uD83D\uDCCB', title: 'Z\u00e1kladn\u00ed informace', content: 
+            (book.info ? 
+            '<div class="info-row"><span class="info-label">Autor:</span> ' + (book.info.narodnost || 'Nezn\u00e1m\u00e1') + ', ' + (book.info.roky || '') + '</div>' +
+            '<div class="info-row"><span class="info-label">Sm\u011br:</span> ' + (book.info.smer || 'Nezn\u00e1m\u00fd') + '</div>' +
+            '<div class="info-row"><span class="info-label">Vyd\u00e1n\u00ed:</span> ' + (book.info.vydani || 'N/A') + '</div>' +
+            '<div class="info-row"><span class="info-label">Druh:</span> ' + (book.info.druh || 'N/A') + '</div>' +
+            '<div class="info-row"><span class="info-label">\u017d\u00e1nr:</span> ' + (book.info.zanr || 'N/A') + '</div>'
+            : '<p>Informace budou brzy dopln\u011bny.</p>')
+        },
+        { id: 'dej', icon: SECTION_ICONS.dej, emoji: '\uD83D\uDCD6', title: 'D\u011bj (timeline)', content: casomistoHtml + '<div class="timeline">' + dejH + '</div>' },
+        { id: 'postavy', icon: SECTION_ICONS.postavy, emoji: '\uD83D\uDC64', title: 'Postavy', content: '<p>' + ph + '<br>' + pv + '</p>' },
+        { id: 'motivy', icon: SECTION_ICONS.motivy, emoji: '\uD83D\uDCA1', title: 'T\u00e9mata a motivy', content: '<p><strong>Hlavn\u00ed t\u00e9ma:</strong> ' + book.temata.hlavni + '</p><div class="motivy-container">' + motH + '</div>' },
+        { id: 'jazyk', icon: SECTION_ICONS.jazyk, emoji: '\u270D\uFE0F', title: 'Jazyk a styl', content: 
+            '<div class="info-row"><span class="info-label">Vyprav\u011b\u010d:</span> ' + book.jazyk.vypravec + '</div>' +
+            '<div class="info-row"><span class="info-label">Prost\u0159edky:</span> ' + book.jazyk.prostredky + '</div>' +
+            '<div class="info-row"><span class="info-label">Tropus:</span> ' + book.jazyk.tropus + '</div>' +
+            '<div class="info-row"><span class="info-label">Figura:</span> ' + book.jazyk.figura + '</div>'
+        },
+        { id: 'kontext', icon: SECTION_ICONS.kontext, emoji: '\uD83C\uDF0D', title: 'Kontext', content: 
+            '<div class="info-row"><span class="info-label">Liter\u00e1rn\u00ed:</span> ' + book.kontext.literarni + '</div>' +
+            '<div class="info-row"><span class="info-label">Historick\u00fd:</span> ' + book.kontext.historicky + '</div>' +
+            '<div class="info-row"><span class="info-label">Inspirace:</span> ' + book.kontext.inspirace + '</div>' +
+            '<div class="info-row"><span class="info-label">Srov\u00e1n\u00ed:</span> ' + book.kontext.srovnani.join(', ') + '</div>'
+        }
+    ];
+
+    var sectionsHtml = sections.map(function(s) {
+        var cls = isNewStyle ? 'modal-section section-' + s.id : 'modal-section';
+        var titleIcon = isNewStyle ? s.icon : s.emoji;
+        return '<div class="' + cls + '"><h3>' + titleIcon + ' ' + s.title + '</h3>' + s.content + '</div>';
+    }).join('');
+
     modalBody.innerHTML =
         '<h2 class="modal-title">' + book.title + '</h2>' +
         '<div class="modal-author">' + book.author + '</div>' +
-        '<div class="modal-section info-grid"><h3>\uD83D\uDCCB Z\u00e1kladn\u00ed informace</h3>' +
-        '<div class="info-row"><span class="info-label">Autor:</span> ' + book.info.narodnost + ', ' + book.info.roky + '</div>' +
-        '<div class="info-row"><span class="info-label">Sm\u011br:</span> ' + book.info.smer + '</div>' +
-        '<div class="info-row"><span class="info-label">Vyd\u00e1n\u00ed:</span> ' + book.info.vydani + '</div>' +
-        '<div class="info-row"><span class="info-label">Druh:</span> ' + book.info.druh + '</div>' +
-        '<div class="info-row"><span class="info-label">\u017d\u00e1nr:</span> ' + book.info.zanr + '</div></div>' +
-        '<div class="modal-section"><h3>\uD83D\uDCD6 D\u011bj (timeline)</h3>' + casomistoHtml + '<div class="timeline">' + dejH + '</div></div>' +
-        '<div class="modal-section"><h3>\uD83D\uDC64 Postavy</h3><p>' + ph + '<br>' + pv + '</p></div>' +
-        '<div class="modal-section"><h3>\uD83D\uDCA1 T\u00e9mata a motivy</h3><p><strong>Hlavn\u00ed t\u00e9ma:</strong> ' + book.temata.hlavni + '</p><div class="motivy-container">' + motH + '</div></div>' +
-        '<div class="modal-section"><h3>\u270D\uFE0F Jazyk a styl</h3>' +
-        '<div class="info-row"><span class="info-label">Vyprav\u011b\u010d:</span> ' + book.jazyk.vypravec + '</div>' +
-        '<div class="info-row"><span class="info-label">Prost\u0159edky:</span> ' + book.jazyk.prostredky + '</div>' +
-        '<div class="info-row"><span class="info-label">Tropus:</span> ' + book.jazyk.tropus + '</div>' +
-        '<div class="info-row"><span class="info-label">Figura:</span> ' + book.jazyk.figura + '</div></div>' +
-        '<div class="modal-section"><h3>\uD83C\uDF0D Kontext</h3>' +
-        '<div class="info-row"><span class="info-label">Liter\u00e1rn\u00ed:</span> ' + book.kontext.literarni + '</div>' +
-        '<div class="info-row"><span class="info-label">Historick\u00fd:</span> ' + book.kontext.historicky + '</div>' +
-        '<div class="info-row"><span class="info-label">Inspirace:</span> ' + book.kontext.inspirace + '</div>' +
-        '<div class="info-row"><span class="info-label">Srov\u00e1n\u00ed:</span> ' + book.kontext.srovnani.join(', ') + '</div></div>' +
+        sectionsHtml +
         soucasniciHtml;
 
     bookModal.classList.remove('hidden');
