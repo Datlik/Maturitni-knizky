@@ -143,33 +143,91 @@ const booksData = [
   {
     id: 4, title: "Malý princ", author: "Antoine de Saint-Exupéry",
     obdobi: 3,
-    info: { narodnost: "Francouzský", roky: "1900-1944", smer: "EXISTENCIALISMUS, filozofická próza", vydani: "1943", druh: "EPIKA", zanr: "Filozofická POHÁDKA" },
-    casoprostor: "NADČASOVÝ, pouště a vesmír",
-    misto: "Poušť SAHARA, planetka B-612, další planetky",
-    dej: ["PILOT havaruje na SAHAŘE","Potká MALÉHO PRINCE z planetky B-612","Princ vypráví o CESTĚ po planetách","Setkává PODIVNÉ dospělé (král, domýšlivec...)","Na Zemi se LIŠKA učí o přátelství","Princ se nechá UŠTKNOUT, vrací se domů"],
-    postavy: { hlavni: [{jmeno:"Malý princ",vlastnost:"NEVINNÝ, moudrý dětský pohled"},{jmeno:"Pilot",vlastnost:"DOSPĚLÝ hledající ztracené dětství"}], vedlejsi: [{jmeno:"Liška",funkce:"UČITELKA přátelství a zodpovědnosti"},{jmeno:"Růže",funkce:"SYMBOL lásky a pýchy"}] },
-    temata: { hlavni: "Správně vidíme jen SRDCEM", motivy: ["DĚTSTVÍ vs. dospělost","PŘÁTELSTVÍ a zodpovědnost","OSAMĚLOST","RŮŽE = křehká láska"] },
-    jazyk: { vypravec: "ICH-FORMA, 1. osoba (pilot)", prostredky: "Jednoduchý POETICKÝ jazyk, alegorie", tropus: "Personifikace: Ochočit = vytvořit POUTA", figura: "Anafora: opakování - dospělí NIKDY..." },
-    kontext: { literarni: "Francouzský EXISTENCIALISMUS 20. století", historicky: "Napsáno v USA v EXILU za 2. sv. války", inspirace: "AUTOBIOGRAFICKÉ - autor byl sám pilot", srovnani: ["Cizinec (Camus)","Alenka v říši divů (Carroll)"] },
+    info: { narodnost: "FRANCOUZ", roky: "1900–1944", smer: "MEZIVÁLEČNÁ LITERATURA, realismus, experimentální próza", vydani: "1943", druh: "EPIKA", zanr: "Filozofická POHÁDKA pro dospělé" },
+    casoprostor: "Pravděpodobně 20. STOLETÍ, děj trvá 8 DNÍ",
+    misto: "ZEMĚ (Sahara), různé VESMÍRNÉ PLANETKY (B612)",
+    dej: [
+      "PILOT ztroskotá v poušti, POTKÁVÁ Malého prince",
+      "Princ VYPRÁVÍ o planetce a milované RŮŽI",
+      "Princ CESTUJE, poznává podivné DOSPĚLE na planetách",
+      "NÁVŠTĚVA Země, setkání s HADEM a LIŠKOU",
+      "OCHOČENÍ lišky, pochopení hodnoty pravého PŘÁTELSTVÍ",
+      "Princ se nechá UŠTKNOUT, NÁVRT domů"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"MALÝ PRINC",vlastnost:"ZVĚDAVÝ a čistý dětský hrdina"},
+        {jmeno:"PILOT",vlastnost:"OSAMĚLÝ dospělý vypravěč a snílek"}
+      ], 
+      vedlejsi: [
+        {jmeno:"RŮŽE",funkce:"PYŠNÁ květina, DŮVOD k princovu návratu"},
+        {jmeno:"LIŠKA",funkce:"MOUDRÁ, UČÍ prince pravému PŘÁTELSTVÍ"},
+        {jmeno:"HAD",funkce:"Uštknutí NAVRACÍ prince na jeho planetu"}
+      ] 
+    },
+    temata: { 
+      hlavni: "STŘET dětského světa s DOSPĚLÝMI", 
+      motivy: ["LÁSKA a pravé PŘÁTELSTVÍ","Hledání SMYSLU ŽIVOTA","Ztracená DĚTSKÁ FANTAZIE","Lidské VLASTNOSTI a NEDOSTATKY"] 
+    },
+    jazyk: { 
+      vypravec: "ICH-FORMA (pilot) a ER-FORMA (princ)", 
+      prostredky: "SPISOVNÝ jazyk, ZDROBNĚLINY, krátké věty, dialogy", 
+      tropus: "PERSONIFIKACE: „HVĚZDY se tiše SMĚJÍ.“", 
+      figura: "APOZIOPEZE: „Prosím pěkně... NAKRESLI mi beránka...“" 
+    },
+    kontext: { 
+      literarni: "Francouzská MEZIVÁLEČNÁ a EXPERIMENTÁLNÍ próza", 
+      historicky: "Napsáno za 2. SVĚTOVÉ VÁLKY v USA", 
+      inspirace: "Vlastní HAVÁRIE autora v africké POUŠTI", 
+      srovnani: ["Romain Rolland - novela PETR A LUCIE"] 
+    },
     soucasnici: {
-      cesti: ["Vladislav Vančura - Markéta Lazarová","Karel Čapek - Válka s mloky","Jiří Wolker - Host do domu"],
-      svetovi: ["Albert Camus - Cizinec","Jean-Paul Sartre - Zeď","Ernest Hemingway - Komu zvoní hrana"]
+      cesti: ["KAREL ČAPEK - dramata R.U.R., BÍLÁ NEMOC","KAREL POLÁČEK - BYLO NÁS PĚT","JIŘÍ WOLKER - TĚŽKÁ HODINA"],
+      svetovi: ["ROMAIN ROLLAND - PETR A LUCIE","E. M. REMARQUE - NA ZÁPADNÍ FRONTĚ KLID","HENRI BARBUSSE - OHEŇ"]
     }
   },
   {
     id: 5, title: "Tyrolské elegie", author: "Karel Havlíček Borovský",
     obdobi: 2,
-    info: { narodnost: "Český", roky: "1821-1856", smer: "NÁRODNÍ OBROZENÍ, realismus 19. st.", vydani: "1861 (psáno 1852)", druh: "LYRIKA", zanr: "Satirická BÁSEŇ" },
-    casoprostor: "ROK 1851, cesta z Čech do Tyrolska",
-    misto: "Havlíčkův BYT, KOČÁR přes Alpy, Brixen",
-    dej: ["Havlíček ZATČEN doma v noci tajně","PŘEVOZ v kočáru přes Alpy do Brixenu","Policejní hlídka NESCHOPNÁ a vystrašená","Koně se SPLAŠÍ v temném lese","Hlídka VYSKÁČE, Havlíček řídí sám","Ironický VÝSMĚCH rakouské zvůli"],
-    postavy: { hlavni: [{jmeno:"Karel Havlíček",vlastnost:"STATEČNÝ satirik a novinář"}], vedlejsi: [{jmeno:"Policejní hlídka",funkce:"NESCHOPNÍ strážci, terč výsměchu"},{jmeno:"Dedera (komisař)",funkce:"PŘEDSTAVITEL rakouské moci"}] },
-    temata: { hlavni: "VÝSMĚCH neschopné rakouské vládě", motivy: ["CENZURA a nesvoboda","HUMOR jako zbraň","NOC = tajemství moci","EXIL jako trest"] },
-    jazyk: { vypravec: "ICH-FORMA, 1. osoba (sám Havlíček)", prostredky: "SATIRICKÝ tón, ironie, lidový jazyk", tropus: "Ironie: Vlast MILUJÍCÍ - o vládě", figura: "Anafora: opakované zvolání Ach..." },
-    kontext: { literarni: "NÁRODNÍ OBROZENÍ, 4. fáze, realismus", historicky: "Bachovský ABSOLUTISMUS, cenzura tisku", inspirace: "Vlastní DEPORTACE do Brixenu (1851)", srovnani: ["Král Lávra (Havlíček)","Epigramy (Havlíček)"] },
+    info: { narodnost: "ČECH", roky: "1821–1856", smer: "REALISMUS, národní obrození, 19. STOLETÍ", vydani: "1861", druh: "LYRIKO-EPIKA", zanr: "Satirická báseň, ELEGIE" },
+    casoprostor: "PROSINEC 1851, období BACHOVA ABSOLUTISMU",
+    misto: "NĚMECKÝ BROD, strmé ALPY, BRIXEN",
+    dej: [
+      "NOČNÍ ZATČENÍ policií a LOUČENÍ doma",
+      "Nucený ODJEZD do vyhnanství s Dederou",
+      "Cesta přes Jihlavu, VZPOMÍNKY u kostela",
+      "SPLAŠENÍ KONÍ na strmé cestě ALPAMI",
+      "ZBABĚLÝ ÚTĚK strážníků ze splašeného vozu",
+      "PŘÍJEZD do BRIXENU a policejní dohled"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"K. H. Borovský",vlastnost:"ODVÁŽNÝ, IRONICKÝ"}
+      ], 
+      vedlejsi: [
+        {jmeno:"Franz DEDERA",funkce:"policejní komisař, ŘÍDÍ PŘEVOZ"},
+        {jmeno:"MĚSÍČEK",funkce:"jediný přítel, NASLOUCHÁ PŘÍBĚHU"}
+      ] 
+    },
+    temata: { 
+      hlavni: "KRITIKA rakouského absolutismu a NESVOBODY", 
+      motivy: ["VYHNANSTVÍ","LOUČENÍ","ZBABĚLOST","STRACH","NOC"] 
+    },
+    jazyk: { 
+      vypravec: "ICH-FORMA, autobiografické, 1. OSOBA", 
+      prostredky: "HOVOROVÝ JAZYK, ironie, satira, ARCHAISMY", 
+      tropus: "PERSONIFIKACE: „kostelíček… na mne hledí“", 
+      figura: "INVERZE: „tam Dedera koupil mělnického čtyry lahvice“" 
+    },
+    kontext: { 
+      literarni: "Počátky REALISMUS, fáze NÁRODNÍHO OBROZENÍ", 
+      historicky: "BACHŮV ABSOLUTISMUS v Rakousko-Uhersku", 
+      inspirace: "VLASTNÍ ZÁŽITEK násilné nespravedlivé DEPORTACE", 
+      srovnani: ["Žalozpěvy (Ovidius)"] 
+    },
     soucasnici: {
-      cesti: ["Božena Němcová - Babička","Karel Jaromír Erben - Kytice","Josef Kajetán Tyl - Strakonický dudák"],
-      svetovi: ["Charles Dickens - David Copperfield","Victor Hugo - Bídníci","Edgar Allan Poe - Havran"]
+      cesti: ["Božena NĚMCOVÁ - BABIČKA","K. J. ERBEN - KYTICE","J. K. TYL - STRAKONICKÝ DUDÁK"],
+      svetovi: ["Victor HUGO - BÍDNÍCI","Charles DICKENS - OLIVER TWIST","L. N. TOLSTOJ - VOJNA A MÍR"]
     }
   },
   {
@@ -219,65 +277,191 @@ const booksData = [
   {
     id: 7, title: "Ostře sledované vlaky", author: "Bohumil Hrabal",
     obdobi: 4,
-    info: { narodnost: "Český", roky: "1914-1997", smer: "ČESKÁ POVÁLEČNÁ PRÓZA", vydani: "1965", druh: "EPIKA", zanr: "Novela" },
-    casoprostor: "ÚNOR 1945, konec 2. světové války",
-    misto: "Malá ŽELEZNIČNÍ STANICE v Čechách",
-    dej: ["Elév HRMA nastupuje na malou STANICI","Trpí SEXUÁLNÍ nejistotou, pokus o sebevraždu","Výpravčí HUBIČKA - aféra s razítky","Hrma prožije MILOSTNÉ zasvěcení s odbojářkou","Rozhodne se ZNIČIT německý muniční vlak","Vlak VYHODÍ do vzduchu, sám ZAHYNE"],
-    postavy: { hlavni: [{jmeno:"Miloš Hrma",vlastnost:"NESMĚLÝ elév hledající dospělost"}], vedlejsi: [{jmeno:"Výpravčí Hubička",funkce:"SUKNIČKÁŘ, vzor sebejistoty"},{jmeno:"Zdenička Svatá",funkce:"TELEGRAFISTKA, oběť razítkování"}] },
-    temata: { hlavni: "DOSPÍVÁNÍ malého člověka k hrdinství", motivy: ["SEXUALITA jako cesta k dospělosti","VLAKY = symbol dějin","BANALITA vs. hrdinství","SMRT jako paradoxní vítězství"] },
-    jazyk: { vypravec: "ICH-FORMA, 1. osoba (Hrma)", prostredky: "HOVOROVÝ jazyk, humor, pábení", tropus: "Symbol: vlaky = NEÚPROSNÝ chod dějin", figura: "Kontrast: BANÁLNÍ stanice x VÁLEČNÉ drama" },
-    kontext: { literarni: "Česká PRÓZA 60. let, nová vlna", historicky: "Okupace, PROTEKTORÁT, rok 1945", inspirace: "Hrabalovy ZKUŠENOSTI z nádraží", srovnani: ["Obsluhoval jsem angl. krále (Hrabal)","Žert (Kundera)"] },
+    info: { narodnost: "ČESKÝ", roky: "1914–1997", smer: "ČESKÁ PRÓZA 2. POLOVINY 20. STOLETÍ", vydani: "1965", druh: "EPIKA", zanr: "Tragikomická novela" },
+    casoprostor: "ÚNOR 1945, konec 2. SVĚTOVÉ VÁLKY",
+    misto: "NÁDRAŽÍ Kostomlaty, PROTEKTORÁT Čechy a Morava",
+    dej: [
+      "NÁVRT Miloše po NEÚSPĚŠNÉ SEBEVRAŽDĚ",
+      "ZÁŠKOLÁK Miloš SLEDUJE německé transporty",
+      "HUBIČKA PLÁNUJE ZNIČIT MUNIČNÍ VLAK",
+      "ODBOJÁŘKA Viktoria PŘINÁŠÍ BOMBU",
+      "Viktoria ZBAVUJE Miloše PANICCTVÍ",
+      "Miloš VHAZUJE BOMBU, ZMÍRÁ s Němcem"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"MILOŠ HRMA",vlastnost:"CITLIVÝ a LÍTOSTIVÝ"},
+        {jmeno:"HUBIČKA",vlastnost:"VÝPRAVČÍ, INICIÁTOR odboje"}
+      ], 
+      vedlejsi: [
+        {jmeno:"PŘEDNOSTA",funkce:"AMBICIÓZNÍ CHOVATEL holubů"},
+        {jmeno:"VIKTORIA FREIE",funkce:"ODBOJÁŘKA, PŘINÁŠÍ bombu"},
+        {jmeno:"MÁŠA",funkce:"Milošova PŘÍTELKYNĚ"}
+      ] 
+    },
+    temata: { 
+      hlavni: "KRITIKA nesmyslnosti VÁLKY", 
+      motivy: ["VOJÁK a VÁLKA","LÁSKA a SMRT","RAZÍTKA na zadnici","DOSPÍVÁNÍ a SEXUALITA"] 
+    },
+    jazyk: { 
+      vypravec: "ICH-FORMA, 1. OSOBA, RETROSPEKTIVA", 
+      prostredky: "SPISOVNÁ i NESPISOVNÁ čeština, GERMANISMY, SLANG", 
+      tropus: "PŘIROVNÁNÍ: „zvadl jako LILIUM“", 
+      figura: "APOSIOPESE: „jdu k vám o radu…“" 
+    },
+    kontext: { 
+      literarni: "DRUHÁ VLNA VÁLEČNÉ PRÓZY", 
+      historicky: "PROTEKTORÁT, blížící se KONEC VÁLKY", 
+      inspirace: "HRABAL PRACOVAL jako VÝPRAVČÍ v Kostomlatech", 
+      srovnani: ["Romeo, Julie a tma (Jan Otčenášek)"] 
+    },
     soucasnici: {
-      cesti: ["Milan Kundera - Žert","Josef Škvorecký - Zbabělci","Arnošt Lustig - Démanty noci"],
-      svetovi: ["Gabriel García Márquez - Sto roků samoty","Joseph Heller - Hlava XXII","Kurt Vonnegut - Jatka č. 5"]
+      cesti: ["Jan OTČENÁŠEK - ROMEO, JULIE A TMA","Karel ČAPEK - BÍLÁ NEMOC","Karel POLÁČEK - BYLO NÁS PĚT"],
+      svetovi: ["George ORWELL - FARMA ZVÍŘAT","Ernest HEMINGWAY - STAŘEC A MOŘE","Romain ROLLAND - PETR A LUCIE"]
     }
   },
   {
     id: 8, title: "Vražda v Orient expresu", author: "Agatha Christie",
     obdobi: 3,
-    info: { narodnost: "Anglická", roky: "1890-1976", smer: "DETEKTIVNÍ literatura 20. st.", vydani: "1934", druh: "EPIKA", zanr: "Detektivní ROMÁN" },
-    casoprostor: "30. LÉTA 20. st., zimní noc",
-    misto: "ORIENT EXPRES (vlak), zasněžená Jugoslávie",
-    dej: ["POIROT cestuje Orient expresem","Vlak UVÍZNE ve sněhové závěji","Cestující RATCHETT nalezen ZAVRAŽDĚN","Poirot vyslýchá 12 PODEZŘELÝCH cestujících","Každý má ALIBI, stopy si ODPORUJÍ","VŠECH 12 je vrahů - SPOLEČNÁ pomsta"],
-    postavy: { hlavni: [{jmeno:"Hercule Poirot",vlastnost:"GENIÁLNÍ belgický detektiv"}], vedlejsi: [{jmeno:"Ratchett (Cassetti)",funkce:"OBĚŤ - ve skutečnosti únosce"},{jmeno:"12 cestujících",funkce:"VRAZI z rodinné pomsty"}] },
-    temata: { hlavni: "SPRAVEDLNOST vs. zákon", motivy: ["POMSTA za únos dítěte","ZDÁNÍ klame","VLAK = uzavřený prostor","KOLEKTIVNÍ vina"] },
-    jazyk: { vypravec: "ER-FORMA, 3. osoba, fokalizace Poirot", prostredky: "Logické DEDUKCE, výslechy, dialogy", tropus: "Metafora: vlak = IZOLOVANÝ svět", figura: "Řečnické otázky Poirota při VÝSLECHU" },
-    kontext: { literarni: "Zlatý věk DETEKTIVKY (1920-1940)", historicky: "Meziválečné období, luxusní CESTOVÁNÍ", inspirace: "Christieho vlastní CESTA Orient expresem", srovnani: ["Deset malých černoušků (Christie)","Pes baskervillský (Doyle)"] },
+    info: { narodnost: "ANGLIČANKA", roky: "1890–1976", smer: "MEZIVÁLEČNÁ LITERATURA, MODERNISMUS, zlatý věk detektivky", vydani: "1934", druh: "EPIKA", zanr: "Detektivní ROMÁN" },
+    casoprostor: "ZIMA, rok 1929",
+    misto: "LUXUSNÍ VLAK Orient expres, Jugoslávie (uzavřené kupé)",
+    dej: [
+      "Poirot NASTUPUJE do plného Orient expresu",
+      "Ratchett žádá OCHRANU, Poirot odmítá",
+      "Vlak UVÍZNE ve sněhové závěji",
+      "Ratchett NALEZEN mrtev, ubodán 12 ranami",
+      "Poirot VYŠETŘUJE všechny cestující, nachází stopy",
+      "ODHALENÍ: Vraždili cestující společně ze msty"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"Hercule Poirot",vlastnost:"PRECIZNÍ geniální detektiv"}
+      ], 
+      vedlejsi: [
+        {jmeno:"Samuel Ratchett",funkce:"OBĚŤ vraždy"},
+        {jmeno:"Monsieur Bouc",funkce:"ŘEDITEL železniční společnosti"},
+        {jmeno:"Mary Debenhamová",funkce:"GUVERNANTKA"},
+        {jmeno:"Hector MacQueen",funkce:"SEKRETÁŘ oběti"}
+      ] 
+    },
+    temata: { 
+      hlavni: "VYŠETŘOVÁNÍ VRAŽDY v uzavřeném vlaku", 
+      motivy: ["KOLEKTIVNÍ POMSTA za hrůzný čin","SPRAVEDLNOST versus oficiální zákon","ZTRACENÝ KAPESNÍČEK s iniciálou H","ČISTIČ NA LULKU jako falešná stopa","ČERVENÉ KIMONO s draky"] 
+    },
+    jazyk: { 
+      vypravec: "ER-FORMA, neosobní vševědoucí vypravěč", 
+      prostredky: "SPISOVNÝ JAZYK, dialogy, francouzské fráze", 
+      tropus: "PERSONIFIKACE: „pro tuto teorii mluví to...“", 
+      figura: "ŘEČNICKÁ OTÁZKA: „Ztratila jej žena?“" 
+    },
+    kontext: { 
+      literarni: "MEZIVÁLEČNÁ LITERATURA, ZLATÝ VĚK detektivky", 
+      historicky: "INSPIRACE únosem syna Charlese Lindbergha", 
+      inspirace: "ZNALOST LÉKŮ (lékárnice) a Orient expresu", 
+      srovnani: ["Agatha Christie - SMRT NA NILU"] 
+    },
     soucasnici: {
-      cesti: ["Karel Čapek - Povídky z jedné kapsy","Eduard Bass - Cirkus Humberto","Karel Poláček - Muži v offsidu"],
-      svetovi: ["Arthur Conan Doyle - Sherlock Holmes","Dorothy L. Sayers - detektivky","Dashiell Hammett - Maltézský sokol"]
+      cesti: ["KAREL ČAPEK - Bílá nemoc","EDUARD BASS - Cirkus Humberto"],
+      svetovi: ["ERNEST HEMINGWAY - Stařec a moře","REMARQUE - Na západní frontě klid"]
     }
   },
   {
     id: 9, title: "Saturnin", author: "Zdeněk Jirotka",
     obdobi: 4,
-    info: { narodnost: "Český", roky: "1911-2003", smer: "Česká HUMORISTICKÁ próza", vydani: "1942", druh: "EPIKA", zanr: "Humoristický ROMÁN" },
-    casoprostor: "30.-40. LÉTA 20. st., za protektorátu",
-    misto: "Pražský BYT, dědečkova CHATA u řeky",
-    dej: ["Pán JIŘÍ si najme sluhu SATURNINA","Saturnin působí KATASTROFY svou iniciativou","Příjezd otravné TETY KATEŘINY s Miloušem","Výlet na dědečkovu CHATU bez mostu","Saturnin ZACHRÁNÍ situaci při povodni","Jiří získá slečnu BARBORU díky Saturninovi"],
-    postavy: { hlavni: [{jmeno:"Saturnin",vlastnost:"VYNALÉZAVÝ, drzý, suchý humor"},{jmeno:"Pan Jiří",vlastnost:"POHODLNÝ, nesmělý vypravěč"}], vedlejsi: [{jmeno:"Teta Kateřina",funkce:"PROTIVNÁ příbuzná, antagonistka"},{jmeno:"Slečna Barbora",funkce:"KRÁSNÁ, inteligentní láska Jiřího"}] },
-    temata: { hlavni: "HUMOR jako lék na šedou dobu", motivy: ["SLUHA chytřejší než pán","ABSURDNÍ situace","LÁSKA skrz překážky","RODINA a její konflikty"] },
-    jazyk: { vypravec: "ICH-FORMA, 1. osoba (pan Jiří)", prostredky: "SUCHÝ humor, anglický styl, ironie", tropus: "Litotes: Saturnin není DOCELA normální", figura: "Parenteze: odbočky a komentáře VYPRAVĚČE" },
-    kontext: { literarni: "Česká HUMORISTICKÁ tradice za protektorátu", historicky: "Napsáno za OKUPACE jako únik od reality", inspirace: "Inspirován anglickým humorem (WODEHOUSE)", srovnani: ["Bylo nás pět (Poláček)","Tři muži ve člunu (Jerome)"] },
+    info: { narodnost: "ČECH", roky: "1911–2003", smer: "ČESKÁ HUMORISTICKÁ LITERATURA, 1. polovina 20. století", vydani: "1942", druh: "EPIKA", zanr: "HUMORISTICKÝ ROMÁN" },
+    casoprostor: "PRVNÍ REPUBLIKA, 30.–40. léta",
+    misto: "PRAHA a VENKOV (hausbót, dědečkova vila, srub dr. Vlacha)",
+    dej: [
+      "Vypravěč NAJME svérázného sluhu Saturnina",
+      "Saturnin PŘESTĚHUJE pána na hausbót",
+      "Teta Kateřina VYHNÁNA maskami z lodi",
+      "Povodeň STRHNE MOST k dědečkově vile",
+      "Výprava do města pro NOVÉ ZÁSOBY",
+      "Dědeček PŘEDSTÍRÁ ŠÍLENSTVÍ kvůli tetě Kateřině"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"Saturnin",vlastnost:"VYNALÉZAVÝ a inteligentní hybatel děje"},
+        {jmeno:"Vypravěč (Jiří)",vlastnost:"PASIVNÍ mladý gentleman"},
+        {jmeno:"Teta Kateřina",vlastnost:"KOMICKÁ postava, touží po dědictví"},
+        {jmeno:"Slečna Barbora",vlastnost:"LÁSKA vypravěče, elegantní sportovkyně"}
+      ], 
+      vedlejsi: [
+        {jmeno:"Milouš",funkce:"HLOUPEJŠÍ dospívající a laciný světák"},
+        {jmeno:"Dědeček",funkce:"BOHATÝ ředitel elektrárny bavící se okolím"},
+        {jmeno:"Doktor Vlach",funkce:"SARKASTICKÝ rodinný přítel a glosátor"}
+      ] 
+    },
+    temata: { 
+      hlavni: "ABSURDITA konvencí, oslava HUMORU a fantazie", 
+      motivy: ["SLUHA A PÁN","Teta chrlící PŘÍSLOVÍ","SUCHÝ ANGLICKÝ HUMOR","NÁHODA A DOBRODRUŽSTVÍ"] 
+    },
+    jazyk: { 
+      vypravec: "ICH-FORMA, 1. osoba (vypravěč)", 
+      prostredky: "SPISOVNÝ, ARCHAISMY, KNIŽNÍ VÝRAZY, SARKASMUS", 
+      tropus: "PERSONIFIKACE: „zaječení zvonku“", 
+      figura: "ŘEČNICKÁ OTÁZKA: „Co bude, proboha, dělat v létě?“" 
+    },
+    kontext: { 
+      literarni: "ČESKÁ HUMORISTICKÁ LITERATURA, doba okupace", 
+      historicky: "ÚNIK před hrůzami druhé světové války", 
+      inspirace: "P. G. Wodehouse (SLUHA JEEVES)", 
+      srovnani: ["KAREL POLÁČEK - MUŽI V OFSAJDU"] 
+    },
     soucasnici: {
-      cesti: ["Karel Poláček - Bylo nás pět","Eduard Bass - Cirkus Humberto","Vladislav Vančura - Rozmarné léto"],
-      svetovi: ["P. G. Wodehouse - Jeeves","Jerome K. Jerome - Tři muži ve člunu","Evelyn Waugh - Návrat na Brideshead"]
+      cesti: ["Karel POLÁČEK - BYLO NÁS PĚT","Eduard BASS - CIRKUS HUMBERTO"],
+      svetovi: ["George ORWELL - FARMA ZVÍŘAT","Ernest HEMINGWAY - STAŘEC A MOŘE"]
     }
   },
   {
     id: 10, title: "Lakomec", author: "Molière",
     obdobi: 1,
-    info: { narodnost: "Francouzský", roky: "1622-1673", smer: "KLASICISMUS 17. století", vydani: "1668", druh: "DRAMA", zanr: "Charakterová KOMEDIE, 5 jednání" },
-    casoprostor: "17. STOLETÍ, současná Francie Molièra",
-    misto: "Harpagonův DŮM v Paříži",
-    dej: ["HARPAGON posedlý lakotou, schová POKLAD","Syn KLEANT miluje chudou MARIANU","Harpagon chce Marianu za ŽENU sám","Sluha Čipera UKRADNE zakopanou truhlu","Harpagon obviní Valéra - NEDOROZUMĚNÍ","Anselm = otec Valéra i Mariany, VŠE se vyřeší"],
-    postavy: { hlavni: [{jmeno:"Harpagon",vlastnost:"PATOLOGICKY lakomý otec"}], vedlejsi: [{jmeno:"Kleant",funkce:"SYN, zamilovaný do Mariany"},{jmeno:"Eliška",funkce:"DCERA, miluje Valéra"},{jmeno:"Valér",funkce:"Eliškin milý, syn Anselma"}] },
-    temata: { hlavni: "LAKOTA ničí mezilidské vztahy", motivy: ["PENÍZE nad láskou","GENERAČNÍ konflikt otec-děti","PŘETVÁŘKA služebníků","SŇATEK z rozumu vs. z lásky"] },
-    jazyk: { vypravec: "DIALOGICKÁ forma, scénické poznámky", prostredky: "Komické SITUACE, qui pro quo, hyperbola", tropus: "Hyperbola: Harpagonova MÁ TRUHLIČKO!", figura: "Anafora: opak. výkřiků ZLODĚJI! VRAZI!" },
-    kontext: { literarni: "Francouzský KLASICISMUS, pravidlo 3 jednot", historicky: "Doba Ludvíka XIV., ABSOLUTISMUS", inspirace: "Plautova KOMEDIE Aulularia (antika)", srovnani: ["Tartuffe (Molière)","Zdravý nemocný (Molière)"] },
+    info: { narodnost: "FRANCIE", roky: "1622–1673", smer: "Francouzský KLASICISMUS, 17. STOLETÍ", vydani: "1668", druh: "DRAMA", zanr: "Satirická komedie" },
+    casoprostor: "Během 24 HODIN roku 1670",
+    misto: "Harpagonův DŮM a ZAHRADA, Paříž",
+    dej: [
+      "Harpagon CHCE PROVDAT děti kvůli PENĚZŮM",
+      "Kleant a Eliška MILUJÍ CHUDÉ partnery",
+      "Sluha UKRADNE Harpagonovi truhlu s PENĚZI",
+      "Harpagon ŠÍLÍ a VYŠETŘUJE celou rodinu",
+      "Anselm POZNÁVÁ své ztracené DĚTI",
+      "SVATBY párů, Harpagon ZÍSKÁ ZPĚT poklad"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"Harpagon",vlastnost:"chorobný LAKOMEC"},
+        {jmeno:"Kleant",vlastnost:"ZAMILOVANÝ odvážlivec"},
+        {jmeno:"Eliška",vlastnost:"upřímná, SPRAVEDLIVÁ"},
+        {jmeno:"Valér",vlastnost:"VĚRNÝ podlézavec"},
+        {jmeno:"Mariana",vlastnost:"SKROMNÁ a plachá"}
+      ], 
+      vedlejsi: [
+        {jmeno:"Anselm",funkce:"BOHATÝ šlechtic, rozuzluje děj"},
+        {jmeno:"Frosina",funkce:"manipulativní DOHAZOVAČKA"},
+        {jmeno:"Čipera",funkce:"SLUHA, ukradne truhlu"},
+        {jmeno:"Jakub",funkce:"KUCHAŘ a kočí"}
+      ] 
+    },
+    temata: { 
+      hlavni: "Ničivá CHAMTIVOST a lakota", 
+      motivy: ["PENÍZE a ukrytý poklad","LÁSKA a upřímné city","INTRIGY a společenská přetvářka","RODINNÉ VZTAHY"] 
+    },
+    jazyk: { 
+      vypravec: "ER-FORMA (3. osoba), DIALOGY", 
+      prostredky: "SPISOVNÁ čeština, HOVOROVÉ výrazy, ARCHAISMY", 
+      tropus: "METAFORA: „aby ti z toho něco KÁPLO“", 
+      figura: "APOSTROFA: „Ach, PENÍZE, penízky...“" 
+    },
+    kontext: { 
+      literarni: "Francouzský KLASICISMUS a OSVÍCENSTVÍ", 
+      historicky: "Doba absolutismu krále LUDVÍKA XIV.", 
+      inspirace: "Plautova antická KOMEDIE O HRNCI", 
+      srovnani: ["Tartuffe (Molière)","Sluha dvou pánů (Carlo Goldoni)"] 
+    },
     soucasnici: {
-      cesti: ["Jan Ámos Komenský - Labyrint světa","Bedřich Bridel - Co Bůh? Člověk?","Adam Michna z Otradovic - básně"],
-      svetovi: ["Jean Racine - Faidra","Pierre Corneille - Cid","Jean de La Fontaine - Bajky"]
+      cesti: [],
+      svetovi: ["Pierre CORNEILLE - CID","Jean RACINE - FAIDRA","Jean de la FONTAINE - BAJKY"]
     }
   },
   {
@@ -299,39 +483,101 @@ const booksData = [
   {
     id: 12, title: "Farma zvířat", author: "George Orwell",
     obdobi: 3,
-    info: { narodnost: "Anglický", roky: "1903-1950", smer: "DYSTOPICKÁ literatura 20. st.", vydani: "1945", druh: "EPIKA", zanr: "Alegorická BAJKA / antiutopie" },
-    casoprostor: "NADČASOVÝ (alegorie 1917-1943)",
-    misto: "Panská FARMA v anglickém venkově",
-    dej: ["Zvířata VYŽENOU farmáře Jonese","Ustanoví 7 PŘIKÁZÁNÍ rovnosti","Prasata převezmou VEDENÍ (Napoleon)","Kuliš VYHNÁN, Napoleon vládne terorem","Přikázání postupně MĚNĚNA ve prospěch prasat","Prasata NEROZPOZNATELNÁ od lidí"],
-    postavy: { hlavni: [{jmeno:"Napoleon",vlastnost:"LSTIVÝ diktátor (Stalin)"}], vedlejsi: [{jmeno:"Boxer",funkce:"VĚRNÝ, naivní dělník"},{jmeno:"Kuliš",funkce:"IDEALISTA vyhnán (Trockij)"}] },
-    temata: { hlavni: "TOTALITARISMUS a zneužití moci", motivy: ["MANIPULACE propagandou","ROVNOST jen na papíře","PSI = tajná policie","PŘEPISOVÁNÍ dějin"] },
-    jazyk: { vypravec: "ER-FORMA, 3. osoba, vševědoucí", prostredky: "ALEGORICKÝ styl, jednoduchý jazyk", tropus: "Alegorie: farma = SOVĚTSKÝ SVAZ", figura: "Gradace: postupná ZMĚNA přikázání" },
-    kontext: { literarni: "Anglická DYSTOPICKÁ próza 20. st.", historicky: "Kritika STALINISMU a SSSR", inspirace: "Orwellovy zkušenosti ze ŠPANĚLSKA", srovnani: ["1984 (Orwell)","Konec civilizace (Huxley)"] },
+    info: { narodnost: "ANGLIČAN", roky: "1903–1950", smer: "SVĚTOVÁ LITERATURA po r. 1945, ANTIUTOPIE", vydani: "1945", druh: "EPIKA", zanr: "Alegorický ROMÁN, BAJKA" },
+    casoprostor: "30.–50. léta 20. století",
+    misto: "ANGLIE, fiktivní PANSKÁ FARMA",
+    dej: [
+      "Vize REVOLUCE od kance Majora",
+      "Vzpoura, VYHNÁNÍ lidí, Zvířecí farma",
+      "SPORY vůdců, vyhnání kance Kuliše",
+      "Stavba MLÝNA, krutá DIKTATURA prasete Napoleona",
+      "Úmrtí dříče BOXERA na jatkách",
+      "ROZPAD ideálů, prasata SPLÝVAJÍ s lidmi"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"NAPOLEON",vlastnost:"POKRYTECKÝ, zlý diktátor"},
+        {jmeno:"KULIŠ",vlastnost:"INTELIGENTNÍ, čestný a vynalézavý"}
+      ], 
+      vedlejsi: [
+        {jmeno:"BOXER",funkce:"PRACOVITÝ a zmanipulovaný"},
+        {jmeno:"PIŠTÍK",funkce:"PROPAGANDISTA a mluvčí režimu"},
+        {jmeno:"Pan JONES",funkce:"původní MAJITEL farmy"},
+        {jmeno:"BENJAMIN",funkce:"PASIVNÍ intelektuál, autorovo alter-ego"}
+      ] 
+    },
+    temata: { 
+      hlavni: "Kritika TOTALITY a KOMUNISMU", 
+      motivy: ["Ztráta SVOBODY a MANIPULACE","Píseň ZVÍŘATA ANGLIE","Měnící se SEDM PŘIKÁZÁNÍ","LŽI a propaganda"] 
+    },
+    jazyk: { 
+      vypravec: "ER-FORMA (3. osoba), vševědoucí VYPRAVĚČ", 
+      prostredky: "SPISOVNÝ jazyk, odborné TERMÍNY, PERSONIFIKACE", 
+      tropus: "PŘIROVNÁNÍ: „budoucnost jak zlato září“", 
+      figura: "REPETICE: „Čtyři nohy dobré, dvě špatné“" 
+    },
+    kontext: { 
+      literarni: "LITERATURA PO 2. SVĚTOVÉ VÁLCE", 
+      historicky: "Konec VÁLKY, nástup STALINISMU", 
+      inspirace: "Situace v SSSR, AUTOBIOGRAFICKÝ osel Benjamin", 
+      srovnani: ["1984 (George Orwell)"] 
+    },
     soucasnici: {
-      cesti: ["Karel Čapek - Válka s mloky","Vladislav Vančura - Markéta Lazarová","Jiří Wolker - básně"],
-      svetovi: ["Aldous Huxley - Konec civilizace","Ray Bradbury - 451 stupňů Fahrenheita","Arthur Koestler - Tma o poledni"]
+      cesti: ["Karel ČAPEK - R.U.R.","Ludvík SOUČEK - Cesta slepých ptáků"],
+      svetovi: ["Ray BRADBURY - Marťanská kronika","Isaac ASIMOV - Já, robot","Albert CAMUS - Cizinec"]
     }
   },
   {
     id: 13, title: "Bylo nás pět", author: "Karel Poláček",
     obdobi: 4,
-    info: { narodnost: "Český", roky: "1892-1945", smer: "Česká MEZIVÁLEČNÁ próza", vydani: "1946 (psáno 1943)", druh: "EPIKA", zanr: "Humoristický ROMÁN" },
-    casoprostor: "POČÁTEK 20. st., před 1. sv. válkou",
-    misto: "Malé MALOMĚSTO (Rychnov nad Kněžnou)",
-    dej: ["Péťa BAJZA vypráví o partě KLUKŮ","Bitvy s rivalskou JEŠÍNOVOU bandou","Éda KEMLINK - podnikavý kamarád","Dobrodružství s INDIÁNY a výpravami","Pan KEMLINK boří autoritu dospělých","IDYLICKÁ vzpomínka na dětství v městečku"],
-    postavy: { hlavni: [{jmeno:"Péťa Bajza",vlastnost:"ZVÍDAVÝ vypravěč, syn obchodníka"}], vedlejsi: [{jmeno:"Éda Kemlink",funkce:"PODNIKAVÝ, vůdce party"},{jmeno:"Zilvar",funkce:"TICHÝ a věrný kamarád"}] },
-    temata: { hlavni: "DĚTSTVÍ jako ztracený ráj", motivy: ["PŘÁTELSTVÍ party kluků","DOSPĚLÍ očima dětí","MALOMĚSTO a jeho figurky","HRA a fantazie"] },
-    jazyk: { vypravec: "ICH-FORMA, 1. osoba (Péťa)", prostredky: "DĚTSKÝ naivní jazyk, humor, ironie", tropus: "Ironie: otec je VELMI moudrý", figura: "Opakování: ustálené FRÁZE otce" },
-    kontext: { literarni: "Česká HUMORISTICKÁ próza 30. let", historicky: "Psáno v TEREZÍNĚ před smrtí autora", inspirace: "Poláčkovo DĚTSTVÍ v Rychnově n. Kn.", srovnani: ["Saturnin (Jirotka)","Tom Sawyer (Twain)"] },
+    info: { narodnost: "ČESKÝ", roky: "1892–1945", smer: "ČESKÁ MEZIVÁLEČNÁ PRÓZA, demokratický PROUD", vydani: "1946", druh: "EPIKA", zanr: "Humoristický ROMÁN" },
+    casoprostor: "ZAČÁTEK 20. STOLETÍ, PRVNÍ REPUBLIKA",
+    misto: "MALOMĚSTO Rychnov nad Kněžnou, snová INDIE",
+    dej: [
+      "Péťa prožívá KLUKOVSKÁ DOBRODRUŽSTVÍ s partou",
+      "Perou se s NEPŘÁTELSKÝMI Ješiňáky a Habrováky",
+      "Neúspěšné vybírání VOSÍHO HNÍZDA",
+      "Návštěva CIRKUSU a pomoc zvířatům",
+      "Péťa onemocní SPÁLOU a těžce blouzní",
+      "Snová výprava do INDIE, UZDRAVENÍ"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"Petr Bajza",vlastnost:"VYPRAVĚČ, inteligentní ROŠŤÁK s představivostí"}
+      ], 
+      vedlejsi: [
+        {jmeno:"Antonín Bejval",funkce:"KAMARÁD, ješitný VYNÁLEZCE"},
+        {jmeno:"Čeněk Jirsák",funkce:"KAMARÁD, pobožný SBĚRATEL hříchů"},
+        {jmeno:"Josef Zilvar",funkce:"KAMARÁD z chudobince, starší KUŘÁK"},
+        {jmeno:"Eda Kemlink",funkce:"KAMARÁD, chytrý syn ÚŘEDNÍKA"},
+        {jmeno:"Tatínek Bajza",funkce:"MAJITEL obchodu, přísný živitel"},
+        {jmeno:"Kristýna (Rampepurda)",funkce:"bláznivá SLUŽKA z Rampuše"}
+      ] 
+    },
+    temata: { 
+      hlavni: "Svět DOSPĚLÝCH viděný DĚTSKÝMA OČIMA", 
+      motivy: ["KLUKOVSKÁ DOBRODRUŽSTVÍ","Život na MALOMĚSTĚ","KAMARÁDSTVÍ a rodina","Snová EXOTIKA (Indie)"] 
+    },
+    jazyk: { 
+      vypravec: "ICH-FORMA, 1. OSOBA (Petr)", 
+      prostredky: "Zastaralý SPISOVNÝ jazyk, dětský SLANG, ARCHAISMY, GERMANISMY", 
+      tropus: "PŘIROVNÁNÍ: „červený jako JABLÍČKO“", 
+      figura: "EPIZEUXIS: „HOLÁ, HOLÁ!“" 
+    },
+    kontext: { 
+      literarni: "DEMOKRATICKÝ PROUD, skupina Pátečníci", 
+      historicky: "Vznik za OKUPACE před transportem", 
+      inspirace: "AUTOBIOGRAFICKÉ vzpomínky na DĚTSTVÍ", 
+      srovnani: ["Dobrodružství Toma Sawyera (Mark Twain)"] 
+    },
     soucasnici: {
-      cesti: ["Zdeněk Jirotka - Saturnin","Eduard Bass - Cirkus Humberto","Vladislav Vančura - Rozmarné léto"],
-      svetovi: ["Mark Twain - Tom Sawyer","Erich Kästner - Emil a detektivové","Antoine de Saint-Exupéry - Malý princ"]
+      cesti: ["Karel ČAPEK - BÍLÁ NEMOC","Eduard BASS - CIRKUS HUMBERTO","Vladislav VANČURA - ROZMARNÉ LÉTO"],
+      svetovi: []
     }
   },
   {
     id: 14, title: "Piková dáma", author: "Alexandr Sergejevič Puškin",
     obdobi: 2,
-    info: { narodnost: "Ruský", roky: "1799-1837", smer: "ROMANTISMUS s prvky realismu", vydani: "1834", druh: "EPIKA", zanr: "Novela" },
     casoprostor: "POČÁTEK 19. st., carské Rusko",
     misto: "PETROHRAD, salóny, dům hraběnky, herny",
     dej: ["Důstojník HERMANN touží po BOHATSTVÍ","Zjistí tajemství STARÉ hraběnky (3 karty)","VNIKNE k hraběnce, ta umírá STRACHEM","Přízrak hraběnky mu prozradí: 3, 7, ESO","Dvakrát VYHRAJE, ale třetí karta...","Místo esa vytáhne PIKOVOU DÁMU - zešílí"],
@@ -347,7 +593,6 @@ const booksData = [
   {
     id: 15, title: "Petr a Lucie", author: "Romain Rolland",
     obdobi: 3,
-    info: { narodnost: "Francouzský", roky: "1866-1944", smer: "HUMANISMUS, protiválečná próza", vydani: "1920", druh: "EPIKA", zanr: "Protiválečná NOVELA" },
     casoprostor: "LEDEN-BŘEZEN 1918, 1. sv. válka",
     misto: "Bombardovaná PAŘÍŽ, metro, kostel",
     dej: ["PETR potká LUCII při náletu v metru","Oba hledají ÚNIK z hrůz 1. sv. války","Postupně se do sebe ZAMILUJÍ","Lucie je CHUDÁ malířka, Petr z buržoazie","Plánují SPOLEČNOU budoucnost po válce","Na Velký pátek oba ZAHYNOU v kostele"],
@@ -363,65 +608,187 @@ const booksData = [
   {
     id: 16, title: "Romeo a Julie", author: "William Shakespeare",
     obdobi: 1,
-    info: { narodnost: "Anglický", roky: "1564-1616", smer: "RENESANCE, alžbětinské drama", vydani: "1597", druh: "DRAMA", zanr: "Milostná TRAGÉDIE, 5 jednání" },
-    casoprostor: "14. STOLETÍ, renesanční Itálie",
-    misto: "Italská VERONA, dům Kapuletů, hrobka",
-    dej: ["Rody MONTEKŮ a KAPULETŮ se nenávidí","Romeo a Julie se ZAMILUJÍ na plese","Tajně se ODDAJÍ (bratr Vavřinec)","Romeo zabije TYBALTA, musí do vyhnanství","Julie předstírá SMRT uspávacím lektvarem","Romeo se OTRÁVÍ, Julie se PROBODNE"],
-    postavy: { hlavni: [{jmeno:"Romeo",vlastnost:"VÁŠNIVÝ mladý Montek"},{jmeno:"Julie",vlastnost:"ODVÁŽNÁ mladá Kapuletová"}], vedlejsi: [{jmeno:"Bratr Vavřinec",funkce:"MNICH, tajně je oddá"},{jmeno:"Tybalt",funkce:"AGRESIVNÍ bratranec Julie"}] },
-    temata: { hlavni: "LÁSKA silnější než nenávist rodů", motivy: ["OSUD a předurčení","NENÁVIST rodů","MLÁDÍ vs. stará generace","SMRT jako sjednocení"] },
-    jazyk: { vypravec: "DIALOGICKÁ drama, BLANKVERS", prostredky: "Veršovaný JAZYK, monology, slovní hříčky", tropus: "Metafora: Julie je SLUNCE", figura: "Oxymóron: krásná PŘÍŠERO, andělský ďáble" },
-    kontext: { literarni: "Anglická RENESANCE, alžbětinské divadlo", historicky: "Doba královny ALŽBĚTY I. (16. st.)", inspirace: "Italská NOVELA z 15. století", srovnani: ["Hamlet (Shakespeare)","Petr a Lucie (Rolland)"] },
+    info: { narodnost: "ANGLIE", roky: "1564–1616", smer: "ANGLICKÁ RENESANCE a HUMANISMUS", vydani: "1596", druh: "DRAMA", zanr: "Milostná TRAGÉDIE" },
+    casoprostor: "16. STOLETÍ, doba RENESANCE",
+    misto: "ITALSKÁ města VERONA a MANTOVA",
+    dej: [
+      "Střet rodů a SETKÁNÍ na plese",
+      "Tajná SVATBA milenců u VAVŘINCE",
+      "Romeo ZABIJE Tybalta, následuje VYHNANSTVÍ",
+      "Julie VYPIJE uspávací nápoj od VAVŘINCE",
+      "Romeo nachází Julii mrtvou, VYPIJE JED",
+      "Julie se PROBODNE, USMÍŘENÍ znepřátelených RODŮ"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"ROMEO Montek",vlastnost:"IMPULZIVNÍ a odvážný"},
+        {jmeno:"JULIE Kapuletová",vlastnost:"VĚRNÁ a odvážná"}
+      ], 
+      vedlejsi: [
+        {jmeno:"VAVŘINEC",funkce:"tajně ODDÁ milence"},
+        {jmeno:"TYBALT",funkce:"ZABIJE Merkucia, vyvolává KONFLIKTY"}
+      ] 
+    },
+    temata: { 
+      hlavni: "Nešťastná LÁSKA ze znepřátelených RODŮ", 
+      motivy: ["Rodová NENÁVIST a SPORY","Tragická SMRT a JED","Závěrečné USMÍŘENÍ obou RODŮ"] 
+    },
+    jazyk: { 
+      vypravec: "DRAMA založené na DIALOZÍCH a MONOLOZÍCH", 
+      prostredky: "Pětistopý jambický verš (BLANKVERS), SPISOVNÝ jazyk", 
+      tropus: "METAFORA: „Jeť láska DÝM...“", 
+      figura: "OXYMÓRON: „ĎÁBLE andělský“" 
+    },
+    kontext: { 
+      literarni: "EVROPSKÝ HUMANISMUS a RENESANCE", 
+      historicky: "Rozvoj VĚDY, objevení AMERIKY, KNIHTISK", 
+      inspirace: "Antický příběh PHIRAMUS A THISBÉ", 
+      srovnani: ["Cervantes (Don Quijote)","Lope de Vega (Fuente Ovejuna)"] 
+    },
     soucasnici: {
-      cesti: ["Daniel Adam z Veleslavína - slovníky","Jan Blahoslav - Gramatika česká","Kryštof Harant - Cesta z Čech"],
-      svetovi: ["Miguel de Cervantes - Don Quijote","Christopher Marlowe - Doctor Faustus","Ben Jonson - Volpone"]
+      cesti: [],
+      svetovi: ["Miguel de CERVANTES - DON QUIJOTE","Lope de VEGA - FUENTE OVEJUNA"]
     }
   },
   {
     id: 17, title: "Vyšetřování ztráty třídní knihy", author: "Ladislav Smoljak, Zdeněk Svěrák",
     obdobi: 4,
-    info: { narodnost: "Čeští", roky: "Smoljak 1931-2010, Svěrák *1936", smer: "DIVADLO Járy Cimrmana", vydani: "1967", druh: "DRAMA", zanr: "Mystifikační KOMEDIE" },
-    casoprostor: "PŘELOM 19./20. st. (hra) + současnost (přednáška)",
-    misto: "Venkovská ŠKOLA, divadelní pódium",
-    dej: ["PŘEDNÁŠKA o géniovi Járovi Cimrmanovi","Cimrman údajně vynalezl PEDAGOGICKÉ metody","Hra: INSPEKTOR přijde na venkovskou školu","Zjišťuje ZTRÁTU třídní knihy","Absurdní VÝSLECHY učitelů a žáků","Třídní kniha NENALEZENA, chaos pokračuje"],
-    postavy: { hlavni: [{jmeno:"Inspektor",vlastnost:"BYROKRATICKÝ úředník"}], vedlejsi: [{jmeno:"Učitelé",funkce:"NESCHOPNÍ pedagogové"},{jmeno:"Přednášející",funkce:"CIMRMANOLOGOVÉ v semináři"}] },
-    temata: { hlavni: "SATIRA byrokracie a školství", motivy: ["MYSTIFIKACE génia Cimrmana","ABSURDITA úřadů","HUMOR jako kritika systému","PAPÍR důležitější než učení"] },
-    jazyk: { vypravec: "DIALOGICKÁ forma + přednáškový monolog", prostredky: "SUCHÝ humor, mystifikace, nonsens", tropus: "Ironie: Cimrman PŘEDBĚHL svou dobu", figura: "Nonsensová GRADACE absurdních důkazů" },
-    kontext: { literarni: "Divadlo Járy CIMRMANA, česká komedie", historicky: "60. léta, UVOLNĚNÍ v kultuře (před 1968)", inspirace: "Tradice českého DADAISMU a absurdity", srovnani: ["Dobytí sev. pólu (Smoljak/Svěrák)","Hospoda Na mýtince (Smoljak/Svěrák)"] },
+    info: { narodnost: "ČEŠTI", roky: "SMOLJAK 1931–2010, SVĚRÁK *1936", smer: "ČESKÉ DRAMA 60. LET, malá divadla", vydani: "Premiéra 1967", druh: "DRAMA", zanr: "Absurdní DIVADLO" },
+    casoprostor: "2. POLOVINA 20. STOLETÍ, Rakousko-Uhersko",
+    misto: "ČESKÁ ŠKOLA, učebna třídy 8. C",
+    dej: [
+      "UČITEL marně přemlouvá žáky k VRÁCENÍ KNIHY",
+      "Zastrašování třídy ŘEDITELEM a čtení OBĚŽNÍKU",
+      "Příchod ŘEDITELE, stěžování na NEPĚKNOU VĚC",
+      "Přichází INSPEKTOR s hudební SKŘÍNÍ na krku",
+      "Inspektor řeší ZTRACENÉ ČEPICE místo třídní knihy",
+      "Příchod RADY vzbudí STRACH, vyšetřování končí NEÚSPĚCHEM"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"UČITEL",vlastnost:"PLACHÝ (slaboch bojící se ředitele)"},
+        {jmeno:"ŘEDITEL",vlastnost:"SNAŽIVÝ (pánovitý, obává se inspekce)"}
+      ], 
+      vedlejsi: [
+        {jmeno:"INSPEKTOR",funkce:"DOBRÁK (senilní, zajímají ho čepice)"},
+        {jmeno:"ZEMSKÝ ŠKOLNÍ RADA",funkce:"ZAMLKLÝ (vzbuzuje hrůzu)"},
+        {jmeno:"ŽÁCI (obecenstvo)",funkce:"LHOSTEJNÍ (cíl marného vyšetřování)"}
+      ] 
+    },
+    temata: { 
+      hlavni: "STRACH Z AUTORIT, absurdita školství", 
+      motivy: ["TŘÍDNÍ KNIHA, ŠKOLA, KŮLNA, ČEPICE, SVAČINA"] 
+    },
+    jazyk: { 
+      vypravec: "DIALOGY, monology, ICH-FORMA, dramatická akce", 
+      prostredky: "SPISOVNÝ JAZYK, opakování, ABSURDNÍ DIALOGY, mystifikace", 
+      tropus: "SYNEKDOCHA („A jsme NA LOPATKÁCH.“)", 
+      figura: "ANAKOLUT („nepěknou, OŠKLIVÝ PŘÍPAD.“)" 
+    },
+    kontext: { 
+      literarni: "60. LÉTA, uvolňování cenzury, MALÁ DIVADLA", 
+      historicky: "NORMALIZACE (70. léta), odpor KOMUNISTICKÉMU REŽIMU", 
+      inspirace: "Fiktivní JÁRA CIMRMAN, skutečná KRÁDEŽ (Kirchner)", 
+      srovnani: ["IRENA DOUSKOVÁ - HRDÝ BUDŽES"] 
+    },
     soucasnici: {
-      cesti: ["Václav Havel - Zahradní slavnost","Milan Kundera - Žert","Josef Škvorecký - Zbabělci"],
-      svetovi: ["Samuel Beckett - Čekání na Godota","Eugène Ionesco - Plešatá zpěvačka","Tom Stoppard - Rosencrantz a Guildenstern"]
+      cesti: ["MILOŇ ČEPELKA - ABECEDA LÁSKY","JAN VODŇANSKÝ a PETR SKOUMAL - PÍSNIČKÁŘI"],
+      svetovi: []
     }
   },
   {
     id: 18, title: "O myších a lidech", author: "John Steinbeck",
     obdobi: 3,
-    info: { narodnost: "Americký", roky: "1902-1968", smer: "AMERICKÝ realismus, sociální próza", vydani: "1937", druh: "EPIKA", zanr: "Sociální NOVELA" },
-    casoprostor: "30. LÉTA 20. st., Velká hospodářská krize",
-    misto: "Kalifornské FARMY, břeh řeky Salinas",
-    dej: ["George a Lennie hledají PRÁCI na farmách","Sní o vlastním RANČI s králíky","Lennie je SILNÝ ale mentálně zaostalý","Na farmě Lennie nechtěně ZABIJE štěně","Omylem ZLOMÍ vaz ženě majitelova syna","George Lennieho ZASTŘELÍ z milosrdenství"],
-    postavy: { hlavni: [{jmeno:"George Milton",vlastnost:"CHYTRÝ, ochranitelský přítel"},{jmeno:"Lennie Small",vlastnost:"OBŘÍ, dobrosrdečný, mentálně zaostalý"}], vedlejsi: [{jmeno:"Slim",funkce:"MOUDRÝ kovboj, morální autorita"},{jmeno:"Curleyova žena",funkce:"OSAMĚLÁ, nešťastná oběť"}] },
-    temata: { hlavni: "ZNIČENÍ amerického snu bezmocných", motivy: ["SEN o vlastním ranči","OSAMĚLOST tuláků","SÍLA vs. křehkost","MILOSRDENSTVÍ vs. krutost"] },
-    jazyk: { vypravec: "ER-FORMA, 3. osoba, objektivní", prostredky: "STROHÝ dialogický styl, krátké popisy", tropus: "Symbol: králíci = NEDOSAŽITELNÝ sen", figura: "Opakování: Povídej o KRÁLÍCÍCH, George" },
-    kontext: { literarni: "Americký REALISMUS, sociální próza", historicky: "Velká HOSPODÁŘSKÁ krize 30. let", inspirace: "Steinbeckova znalost kalifornských FARMÁŘŮ", srovnani: ["Hrozny hněvu (Steinbeck)","Stařec a moře (Hemingway)"] },
+    info: { narodnost: "AMERIČAN", roky: "1902–1968", smer: "AMERICKÝ REALISMUS, ZTRACENÁ GENERACE, MEZIVÁLEČNÁ LITERATURA", vydani: "1937", druh: "EPIKA", zanr: "Sociálně kritická NOVELA" },
+    casoprostor: "30. LÉTA 20. STOLETÍ, HOSPODÁŘSKÁ KRIZE",
+    misto: "KALIFORNIE, FARMA U SOLEDADU, ÚDOLÍ SALINAS",
+    dej: [
+      "PŘÍCHOD GEORGE a LENNIEHO na FARMU",
+      "SEZNÁMENÍ, práce a CURLEYHO PROVOKACE",
+      "LENNIE v sebeobraně ROZDRTÍ Curleymu RUKU",
+      "LENNIE nechtěně ZLOMÍ VAZ Curleymu ŽENĚ",
+      "LENNIE UTÍKÁ do vrbiček K ŘECE",
+      "GEORGE ze soucitu LENNIEHO ZASTŘELÍ"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"GEORGE Milton",vlastnost:"OBĚTAVÝ přítel, touží po domově"},
+        {jmeno:"LENNIE Small",vlastnost:"ZAOSTALÝ obrovitý dobrák, silný pracant"}
+      ], 
+      vedlejsi: [
+        {jmeno:"CURLEY",funkce:"AGRESIVNÍ a ŽÁRLIVÝ SYN správce"},
+        {jmeno:"CURLEYHO ŽENA",funkce:"OSAMĚLÁ KOKETA hledající pozornost"},
+        {jmeno:"SLIM",funkce:"PŘIROZENÁ AUTORITA, chápavý a férový KOČÍ"},
+        {jmeno:"CANDY",funkce:"STARÝ BEZRUKÝ UKLÍZEČ s úsporami"},
+        {jmeno:"CROOKS",funkce:"INTELIGENTNÍ, ale ODSTRKOVANÝ ČERNOCH"}
+      ] 
+    },
+    temata: { 
+      hlavni: "NENAPLNĚNÝ AMERICKÝ SEN, KRITIKA SPOLEČNOSTI", 
+      motivy: ["PŘÁTELSTVÍ versus OSAMĚLOST","HEBKÉ VĚCI (myši, štěňata, vlasy)","RASISMUS, VYKOUŘISŤOVÁNÍ a NÁSILÍ"] 
+    },
+    jazyk: { 
+      vypravec: "ER-FORMA (3. osoba), NEZÁVISLÝ VYPRAVĚČ", 
+      prostredky: "NESPISOVNÁ čeština, SLANG, VULGARISMY, živé DIALOGY", 
+      tropus: "PŘIROVNÁNÍ: „Lennie vypadal jako přišlápnutý červ.“", 
+      figura: "EPIZEUXIS: „Pusťte! Tak už pusťte!“" 
+    },
+    kontext: { 
+      literarni: "MEZIVÁLEČNÁ LITERATURA, AMERICKÝ REALISMUS", 
+      historicky: "HOSPODÁŘSKÁ KRIZE, NEZAMĚSTNANOST v 30. letech", 
+      inspirace: "AUTOBIOGRAFICKÉ PRVKY: VLASTNÍ ZKUŠENOSTI námezdního dělníka", 
+      srovnani: ["Theodore Dreiser - Americká tragédie"] 
+    },
     soucasnici: {
-      cesti: ["Karel Čapek - Bílá nemoc","Vladislav Vančura - Markéta Lazarová","Karel Poláček - Bylo nás pět"],
-      svetovi: ["Ernest Hemingway - Komu zvoní hrana","William Faulkner - Absolone!","Francis Scott Fitzgerald - Velký Gatsby"]
+      cesti: [],
+      svetovi: ["F. S. FITZGERALD - VELKÝ GATSBY","Ernest HEMINGWAY - STAŘEC A MOŘE","W. FAULKNER - ABSOLÓNE, ABSOLÓNE!"]
     }
   },
   {
     id: 19, title: "Rozmarné léto", author: "Vladislav Vančura",
     obdobi: 4,
-    info: { narodnost: "Český", roky: "1891-1942", smer: "Česká AVANTGARDA, poetismus", vydani: "1926", druh: "EPIKA", zanr: "Lyrizovaná NOVELA" },
-    casoprostor: "LÉTO, přelom 19./20. století",
-    misto: "Malé LÁZEŇSKÉ MĚSTEČKO u řeky",
-    dej: ["Tři přátelé TRÁVÍ líné léto u vody","Přijíždí kouzelník ARNOŠTEK s Annou","Anna OKOUZLÍ všechny tři muže","Každý se pokusí o SBLÍŽENÍ s Annou","Všichni NEÚSPĚŠNÍ, zesměšněni","Arnoštek ODJÍŽDÍ, vše se vrátí do kolejí"],
-    postavy: { hlavni: [{jmeno:"Antonín Důra",vlastnost:"POHODLNÝ správce lázní"}], vedlejsi: [{jmeno:"Kanovník Roch",funkce:"DUCHOVNÍ, podlehne kouzlu Anny"},{jmeno:"Major Hugo",funkce:"DŮSTOJNÍK, další oběť Anny"},{jmeno:"Arnoštek",funkce:"KEJKLÍŘ s krásnou Annou"}] },
-    temata: { hlavni: "MARNOST touhy a nudný koloběh života", motivy: ["LÉTO jako symbol zahálky","KRÁSA narušuje stereotyp","MALOMĚSTO a jeho nuda","TOUHA vs. realita"] },
-    jazyk: { vypravec: "ER-FORMA, 3. osoba, autorský vypravěč", prostredky: "ARCHAICKÝ, básnický, bohatý jazyk", tropus: "Metafora: léto = ROZMARNÉ marné snění", figura: "Inverze: Nuže OBE DVĚ, slzy i úsměvy" },
-    kontext: { literarni: "Česká AVANTGARDA, poetismus 20. let", historicky: "Stabilní PRVNÍ REPUBLIKA, kulturní rozkvět", inspirace: "Vančurova láska k JAZYKU a experimentu", srovnani: ["Markéta Lazarová (Vančura)","Poetismus (Nezval, Seifert)"] },
+    info: { narodnost: "ČECH", roky: "1891–1942", smer: "IMAGINATIVNÍ PRÓZA, vliv POETISMU", vydani: "1926", druh: "EPIKA", zanr: "Humoristická NOVELA" },
+    casoprostor: "TŘI deštivé ČERVNOVÉ DNY, první POLOVINA 20. STOLETÍ",
+    misto: "LÁZNĚ Krokovy Vary, plovárna ORŠE",
+    dej: [
+      "Tři PŘÁTELÉ tráví LÉTO na PLOVÁRNĚ",
+      "Přijíždí KOUZELNÍK Arnoštek a asistentka ANNA",
+      "MUŽI svádějí Annu, KATEŘINA obdivuje Arnoštka",
+      "Noční NÁMLUVY končí NEÚSPĚCHEM a rvačkami",
+      "Arnoštek SPADNE, Anna DOKONČÍ provazochodecké představení",
+      "KOMEDIANTI odjíždějí, vrací se stará VŠEDNOST"
+    ],
+    postavy: { 
+      hlavni: [
+        {jmeno:"Antonín DŮRA",vlastnost:"majitel plovárny, ZÁLETNÍK"},
+        {jmeno:"Kanovník ROCH",vlastnost:"sečtělý kněz, MRAVOKÁRCE"},
+        {jmeno:"Major HUGO",vlastnost:"bývalý voják, GALANTNÍ"},
+        {jmeno:"Kateřina DŮROVÁ",vlastnost:"Antonínova manželka, ŽÁRLIVÁ"}
+      ], 
+      vedlejsi: [
+        {jmeno:"ARNOŠTEK",funkce:"potulný KOUZELNÍK, rozhýbe dění"},
+        {jmeno:"ANNA",funkce:"kouzelníkova POMOCNICE, objekt touhy"}
+      ] 
+    },
+    temata: { 
+      hlavni: "KRITIKA maloměšťáctví, OSLAVA obyčejné VŠEDNOSTI", 
+      motivy: ["LÉTO, deštivé počasí, PLOVÁRNA","KOUZELNÍK, provazochodectví, CIRKUS","POMÍJIVOST času a MELANCHOLIE","NUDA, lenošení a STEREOTYP"] 
+    },
+    jazyk: { 
+      vypravec: "Vševědoucí VYPRAVĚČ (ER-FORMA)", 
+      prostredky: "ARCHAISMY, přechodníky, SLOŽITÁ SOUVĚTÍ", 
+      tropus: "METAFORA: „sloupec téměř NEÚPLATNÝ sotva se POHNUL“", 
+      figura: "INVERZE: „jenž maje JAZYK ven VYPLAZEN“" 
+    },
+    kontext: { 
+      literarni: "ČESKÁ MEZIVÁLEČNÁ próza, POETISMUS", 
+      historicky: "PRVNÍ REPUBLIKA, období relativního KLIDU", 
+      inspirace: "Vlastní ZÁŽITKY z maloměsta, DADAISMUS", 
+      srovnani: ["Zdeněk Jirotka - Saturnin"] 
+    },
     soucasnici: {
-      cesti: ["Karel Čapek - Povídky z jedné kapsy","Jaroslav Hašek - Osudy dobrého vojáka Švejka","Jiří Wolker - Host do domu"],
-      svetovi: ["Franz Kafka - Proces","James Joyce - Odysseus","Virginia Woolf - Paní Dallowayová"]
+      cesti: ["Karel ČAPEK - R. U. R.","Ivan OLBRACHT - NIKOLA ŠUHAJ LOUPEŽNÍK","Karel POLÁČEK - BYLO NÁS PĚT"],
+      svetovi: ["Franz KAFKA - PROCES","Egon Erwin KISCH - PRAŽSKÝ PITAVAL"]
     }
   },
   {
