@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Maturitní Knihy</title>
+    <!-- Odkaz na CSS styl -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Moje Maturitní Knihy</h1>
+        <p>Digitální čtenářský deník (20 vybraných děl)</p>
+    </header>
+
+    <main>
+        <!-- Zde se automaticky načte 20 knih z JavaScriptu -->
+        <div id="books-grid" class="books-grid"></div>
+    </main>
+
+    <!-- Modální okno (vyskakovací vrstva po kliknutí na knihu) -->
+    <div id="book-modal" class="modal hidden">
+        <div class="modal-content glass-effect">
+            <button id="close-modal" class="close-btn" aria-label="Zavřít">&times;</button>
+            <div id="modal-body">
+                <!-- Data konkrétní knihy se sem vykreslí z JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Odkaz na JavaScriptovou logiku -->
+    <script src="main.js"></script>
+    <script src="data-extra.js"></script>
+</body>
+</html>
