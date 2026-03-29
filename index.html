@@ -14,6 +14,15 @@
     </header>
 
     <main>
+        <!-- Filtrování podle období -->
+        <div class="filter-bar" id="filter-bar">
+            <button class="filter-btn active" data-obdobi="all" onclick="setFilter(null)">📚 Vše</button>
+            <button class="filter-btn" data-obdobi="1" onclick="setFilter(1)">I. Do konce 18. st.</button>
+            <button class="filter-btn" data-obdobi="2" onclick="setFilter(2)">II. 19. století</button>
+            <button class="filter-btn" data-obdobi="3" onclick="setFilter(3)">III. Světová 20./21. st.</button>
+            <button class="filter-btn" data-obdobi="4" onclick="setFilter(4)">IV. Česká 20./21. st.</button>
+        </div>
+
         <!-- Zde se automaticky načte 20 knih z JavaScriptu -->
         <div id="books-grid" class="books-grid"></div>
     </main>

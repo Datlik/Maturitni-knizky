@@ -53,6 +53,58 @@ main {
     padding: 0 2rem 4rem;
 }
 
+/* === FILTROVÁNÍ PODLE OBDOBÍ === */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    padding: 1rem 0;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.3rem;
+    border: 1.5px solid var(--glass-border);
+    border-radius: 50px;
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--text-primary);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.15);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, var(--accent), var(--gold));
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Tag období na kartě */
+.book-obdobi-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-bottom: 0.6rem;
+    align-self: flex-start;
+}
+
 .books-grid {
     display: grid;
     /* Dynamický počet sloupců podle velikosti obrazovky */
@@ -322,6 +374,13 @@ main {
     }
     .timeline-step {
         font-size: 0.9rem;
+    }
+    .filter-btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.8rem;
+    }
+    .filter-bar {
+        gap: 0.4rem;
     }
 }
 

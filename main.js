@@ -1,6 +1,7 @@
 const booksData = [
   {
     id: 1, title: "Bílá nemoc", author: "Karel Čapek",
+    obdobi: 4,
     info: { narodnost: "Český", roky: "1890-1938", smer: "DEMOKRATICKÝ PROUD, meziválečná literatura", vydani: "1937", druh: "DRAMA", zanr: "Antiutopická TRAGÉDIE, 3 jednání" },
     dej: ["Svět zachvátí smrtelná BÍLÁ NEMOC","Dr. GALÉN objeví JEDINÝ LÉK","Léčí jen CHUDÉ, žádá KONEC VÁLKY","MARŠÁL chystá válečné TAŽENÍ","Maršál onemocní, SLÍBÍ MÍR","Galén ZABIT davem, lék ZTRACEN"],
     postavy: { hlavni: [{jmeno:"Dr. Galén",vlastnost:"OBĚTAVÝ humanista"},{jmeno:"Maršál",vlastnost:"DIKTÁTORSKÝ válečník"}], vedlejsi: [{jmeno:"Baron Krüg",funkce:"ZBROJAŘ, otec nemocné dcery"},{jmeno:"Dvorní rada Sigelius",funkce:"KARIÉRISTA, přisvojuje si zásluhy"}] },
@@ -10,6 +11,7 @@ const booksData = [
   },
   {
     id: 2, title: "Věc Makropulos", author: "Karel Čapek",
+    obdobi: 4,
     info: { narodnost: "Český", roky: "1890-1938", smer: "DEMOKRATICKÝ PROUD, meziválečná literatura", vydani: "1922", druh: "DRAMA", zanr: "Filozofická KOMEDIE, 3 jednání" },
     dej: ["Spor GREGOR vs. PRUS trvá 100 let","Zpěvačka MARTY zná tajné DŮKAZY","Prozradí se: je ELINA MAKROPULOS (300 let)","Požila ELIXÍR MLÁDÍ od otce alchymisty","Život bez SMRTI ztratil veškerý SMYSL","SPÁLÍ recept, přijímá SMRTELNOST"],
     postavy: { hlavni: [{jmeno:"Emilia Marty",vlastnost:"CYNICKÁ, znuděná nesmrtelností"},{jmeno:"Albert Gregor",vlastnost:"ZAMILOVANÝ, naivní mladík"}], vedlejsi: [{jmeno:"Dr. Kolenatý",funkce:"ADVOKÁT v dědickém sporu"},{jmeno:"Jaroslav Prus",funkce:"PROTISTRANA ve sporu"}] },
@@ -19,6 +21,7 @@ const booksData = [
   },
   {
     id: 3, title: "Krysař", author: "Viktor Dyk",
+    obdobi: 4,
     info: { narodnost: "Český", roky: "1877-1931", smer: "GENERACE BUŘIČŮ, novoromantismus", vydani: "1915", druh: "EPIKA", zanr: "Novela" },
     dej: ["KRYSAŘ přichází zbavit Hammeln KRYS","Zamiluje se do krásné AGNES","Konšelé ho PODVEDOU, nevyplatí odměnu","Agnes OTĚHOTNÍ s Kristiánem","Agnes odchází do hory KOPPEL (smrt)","Krysař odvede VŠECHNY do propasti"],
     postavy: { hlavni: [{jmeno:"Krysař",vlastnost:"SAMOTÁŘSKÝ, výjimečný cizinec"},{jmeno:"Agnes",vlastnost:"KRÁSNÁ, ale slabá dívka"}], vedlejsi: [{jmeno:"Kristián",funkce:"ZÁLETNÍK, svede Agnes"},{jmeno:"Jörgen",funkce:"BLÁZEN - jediný přeživší"}] },
@@ -28,6 +31,7 @@ const booksData = [
   },
   {
     id: 4, title: "Malý princ", author: "Antoine de Saint-Exupéry",
+    obdobi: 3,
     info: { narodnost: "Francouzský", roky: "1900-1944", smer: "EXISTENCIALISMUS, filozofická próza", vydani: "1943", druh: "EPIKA", zanr: "Filozofická POHÁDKA" },
     dej: ["PILOT havaruje na SAHAŘE","Potká MALÉHO PRINCE z planetky B-612","Princ vypráví o CESTĚ po planetách","Setkává PODIVNÉ dospělé (král, domýšlivec...)","Na Zemi se LIŠKA učí o přátelství","Princ se nechá UŠTKNOUT, vrací se domů"],
     postavy: { hlavni: [{jmeno:"Malý princ",vlastnost:"NEVINNÝ, moudrý dětský pohled"},{jmeno:"Pilot",vlastnost:"DOSPĚLÝ hledající ztracené dětství"}], vedlejsi: [{jmeno:"Liška",funkce:"UČITELKA přátelství a zodpovědnosti"},{jmeno:"Růže",funkce:"SYMBOL lásky a pýchy"}] },
@@ -37,6 +41,7 @@ const booksData = [
   },
   {
     id: 5, title: "Tyrolské elegie", author: "Karel Havlíček Borovský",
+    obdobi: 2,
     info: { narodnost: "Český", roky: "1821-1856", smer: "NÁRODNÍ OBROZENÍ, realismus 19. st.", vydani: "1861 (psáno 1852)", druh: "LYRIKA", zanr: "Satirická BÁSEŇ" },
     dej: ["Havlíček ZATČEN doma v noci tajně","PŘEVOZ v kočáru přes Alpy do Brixenu","Policejní hlídka NESCHOPNÁ a vystrašená","Koně se SPLAŠÍ v temném lese","Hlídka VYSKÁČE, Havlíček řídí sám","Ironický VÝSMĚCH rakouské zvůli"],
     postavy: { hlavni: [{jmeno:"Karel Havlíček",vlastnost:"STATEČNÝ satirik a novinář"}], vedlejsi: [{jmeno:"Policejní hlídka",funkce:"NESCHOPNÍ strážci, terč výsměchu"},{jmeno:"Dedera (komisař)",funkce:"PŘEDSTAVITEL rakouské moci"}] },
@@ -46,6 +51,7 @@ const booksData = [
   },
   {
     id: 6, title: "Stařec a moře", author: "Ernest Hemingway",
+    obdobi: 3,
     info: { narodnost: "Americký", roky: "1899-1961", smer: "ZTRACENÁ GENERACE, realismus", vydani: "1952", druh: "EPIKA", zanr: "Novela" },
     dej: ["Santiago 84 DNÍ bez úlovku","Vyjíždí SAM daleko na moře","Chytí obrovského MARLÍNA","Třídenní VYČERPÁVAJÍCÍ boj s rybou","ŽRALOCI napadnou úlovek cestou zpět","Dorazí jen s KOSTROU, ale získá respekt"],
     postavy: { hlavni: [{jmeno:"Santiago",vlastnost:"HOUŽEVNATÝ, hrdý kubánský rybář"}], vedlejsi: [{jmeno:"Manolin",funkce:"CHLAPEC, věrný přítel a obdivovatel"}] },
@@ -55,6 +61,7 @@ const booksData = [
   },
   {
     id: 7, title: "Ostře sledované vlaky", author: "Bohumil Hrabal",
+    obdobi: 4,
     info: { narodnost: "Český", roky: "1914-1997", smer: "ČESKÁ POVÁLEČNÁ PRÓZA", vydani: "1965", druh: "EPIKA", zanr: "Novela" },
     dej: ["Elév HRMA nastupuje na malou STANICI","Trpí SEXUÁLNÍ nejistotou, pokus o sebevraždu","Výpravčí HUBIČKA - aféra s razítky","Hrma prožije MILOSTNÉ zasvěcení s odbojářkou","Rozhodne se ZNIČIT německý muniční vlak","Vlak VYHODÍ do vzduchu, sám ZAHYNE"],
     postavy: { hlavni: [{jmeno:"Miloš Hrma",vlastnost:"NESMĚLÝ elév hledající dospělost"}], vedlejsi: [{jmeno:"Výpravčí Hubička",funkce:"SUKNIČKÁŘ, vzor sebejistoty"},{jmeno:"Zdenička Svatá",funkce:"TELEGRAFISTKA, oběť razítkování"}] },
@@ -64,6 +71,7 @@ const booksData = [
   },
   {
     id: 8, title: "Vražda v Orient expresu", author: "Agatha Christie",
+    obdobi: 3,
     info: { narodnost: "Anglická", roky: "1890-1976", smer: "DETEKTIVNÍ literatura 20. st.", vydani: "1934", druh: "EPIKA", zanr: "Detektivní ROMÁN" },
     dej: ["POIROT cestuje Orient expresem","Vlak UVÍZNE ve sněhové závěji","Cestující RATCHETT nalezen ZAVRAŽDĚN","Poirot vyslýchá 12 PODEZŘELÝCH cestujících","Každý má ALIBI, stopy si ODPORUJÍ","VŠECH 12 je vrahů - SPOLEČNÁ pomsta"],
     postavy: { hlavni: [{jmeno:"Hercule Poirot",vlastnost:"GENIÁLNÍ belgický detektiv"}], vedlejsi: [{jmeno:"Ratchett (Cassetti)",funkce:"OBĚŤ - ve skutečnosti únosce"},{jmeno:"12 cestujících",funkce:"VRAZI z rodinné pomsty"}] },
@@ -73,6 +81,7 @@ const booksData = [
   },
   {
     id: 9, title: "Saturnin", author: "Zdeněk Jirotka",
+    obdobi: 4,
     info: { narodnost: "Český", roky: "1911-2003", smer: "Česká HUMORISTICKÁ próza", vydani: "1942", druh: "EPIKA", zanr: "Humoristický ROMÁN" },
     dej: ["Pán JIŘÍ si najme sluhu SATURNINA","Saturnin působí KATASTROFY svou iniciativou","Příjezd otravné TETY KATEŘINY s Miloušem","Výlet na dědečkovu CHATU bez mostu","Saturnin ZACHRÁNÍ situaci při povodni","Jiří získá slečnu BARBORU díky Saturninovi"],
     postavy: { hlavni: [{jmeno:"Saturnin",vlastnost:"VYNALÉZAVÝ, drzý, suchý humor"},{jmeno:"Pan Jiří",vlastnost:"POHODLNÝ, nesmělý vypravěč"}], vedlejsi: [{jmeno:"Teta Kateřina",funkce:"PROTIVNÁ příbuzná, antagonistka"},{jmeno:"Slečna Barbora",funkce:"KRÁSNÁ, inteligentní láska Jiřího"}] },
@@ -82,6 +91,7 @@ const booksData = [
   },
   {
     id: 10, title: "Lakomec", author: "Molière",
+    obdobi: 1,
     info: { narodnost: "Francouzský", roky: "1622-1673", smer: "KLASICISMUS 17. století", vydani: "1668", druh: "DRAMA", zanr: "Charakterová KOMEDIE, 5 jednání" },
     dej: ["HARPAGON posedlý lakotou, schová POKLAD","Syn KLEANT miluje chudou MARIANU","Harpagon chce Marianu za ŽENU sám","Sluha Čipera UKRADNE zakopanou truhlu","Harpagon obviní Valéra - NEDOROZUMĚNÍ","Anselm = otec Valéra i Mariany, VŠE se vyřeší"],
     postavy: { hlavni: [{jmeno:"Harpagon",vlastnost:"PATOLOGICKY lakomý otec"}], vedlejsi: [{jmeno:"Kleant",funkce:"SYN, zamilovaný do Mariany"},{jmeno:"Eliška",funkce:"DCERA, miluje Valéra"},{jmeno:"Valér",funkce:"Eliškin milý, syn Anselma"}] },
@@ -91,6 +101,7 @@ const booksData = [
   },
   {
     id: 11, title: "Balady a romance", author: "Jan Neruda",
+    obdobi: 2,
     info: { narodnost: "Český", roky: "1834-1891", smer: "MÁJOVCI, český realismus", vydani: "1883", druh: "LYRIKA / EPIKA", zanr: "Básnická SBÍRKA" },
     dej: ["Sbírka BÁSNÍ - nemá souvislý děj","Balada DĚTSKÁ: matka zabije dítě","Romance HELGOLANDSKÁ: loď v bouři","Balada PAŠIJOVÁ: Kristus na kříži","Romance o KARLU IV.: král staví","Balada ČESKÁ: vlastenecký hrdina"],
     postavy: { hlavni: [{jmeno:"Různé lyrické postavy",vlastnost:"ARCHETYPY lidských osudů"}], vedlejsi: [{jmeno:"Kristus, Karel IV., matky",funkce:"NOSITELÉ morálních dilemat"}] },
@@ -100,6 +111,7 @@ const booksData = [
   },
   {
     id: 12, title: "Farma zvířat", author: "George Orwell",
+    obdobi: 3,
     info: { narodnost: "Anglický", roky: "1903-1950", smer: "DYSTOPICKÁ literatura 20. st.", vydani: "1945", druh: "EPIKA", zanr: "Alegorická BAJKA / antiutopie" },
     dej: ["Zvířata VYŽENOU farmáře Jonese","Ustanoví 7 PŘIKÁZÁNÍ rovnosti","Prasata převezmou VEDENÍ (Napoleon)","Kuliš VYHNÁN, Napoleon vládne terorem","Přikázání postupně MĚNĚNA ve prospěch prasat","Prasata NEROZPOZNATELNÁ od lidí"],
     postavy: { hlavni: [{jmeno:"Napoleon",vlastnost:"LSTIVÝ diktátor (Stalin)"}], vedlejsi: [{jmeno:"Boxer",funkce:"VĚRNÝ, naivní dělník"},{jmeno:"Kuliš",funkce:"IDEALISTA vyhnán (Trockij)"}] },
@@ -109,6 +121,7 @@ const booksData = [
   },
   {
     id: 13, title: "Bylo nás pět", author: "Karel Poláček",
+    obdobi: 4,
     info: { narodnost: "Český", roky: "1892-1945", smer: "Česká MEZIVÁLEČNÁ próza", vydani: "1946 (psáno 1943)", druh: "EPIKA", zanr: "Humoristický ROMÁN" },
     dej: ["Péťa BAJZA vypráví o partě KLUKŮ","Bitvy s rivalskou JEŠÍNOVOU bandou","Éda KEMLINK - podnikavý kamarád","Dobrodružství s INDIÁNY a výpravami","Pan KEMLINK boří autoritu dospělých","IDYLICKÁ vzpomínka na dětství v městečku"],
     postavy: { hlavni: [{jmeno:"Péťa Bajza",vlastnost:"ZVÍDAVÝ vypravěč, syn obchodníka"}], vedlejsi: [{jmeno:"Éda Kemlink",funkce:"PODNIKAVÝ, vůdce party"},{jmeno:"Zilvar",funkce:"TICHÝ a věrný kamarád"}] },
@@ -118,6 +131,7 @@ const booksData = [
   },
   {
     id: 14, title: "Piková dáma", author: "Alexandr Sergejevič Puškin",
+    obdobi: 2,
     info: { narodnost: "Ruský", roky: "1799-1837", smer: "ROMANTISMUS s prvky realismu", vydani: "1834", druh: "EPIKA", zanr: "Novela" },
     dej: ["Důstojník HERMANN touží po BOHATSTVÍ","Zjistí tajemství STARÉ hraběnky (3 karty)","VNIKNE k hraběnce, ta umírá STRACHEM","Přízrak hraběnky mu prozradí: 3, 7, ESO","Dvakrát VYHRAJE, ale třetí karta...","Místo esa vytáhne PIKOVOU DÁMU - zešílí"],
     postavy: { hlavni: [{jmeno:"Hermann",vlastnost:"CHAMTIVÝ, posedlý hazardem"}], vedlejsi: [{jmeno:"Stará hraběnka",funkce:"STRÁŽKYNĚ tajemství karet"},{jmeno:"Líza",funkce:"VYUŽITÁ schovanka hraběnky"}] },
@@ -127,6 +141,7 @@ const booksData = [
   },
   {
     id: 15, title: "Petr a Lucie", author: "Romain Rolland",
+    obdobi: 3,
     info: { narodnost: "Francouzský", roky: "1866-1944", smer: "HUMANISMUS, protiválečná próza", vydani: "1920", druh: "EPIKA", zanr: "Protiválečná NOVELA" },
     dej: ["PETR potká LUCII při náletu v metru","Oba hledají ÚNIK z hrůz 1. sv. války","Postupně se do sebe ZAMILUJÍ","Lucie je CHUDÁ malířka, Petr z buržoazie","Plánují SPOLEČNOU budoucnost po válce","Na Velký pátek oba ZAHYNOU v kostele"],
     postavy: { hlavni: [{jmeno:"Petr",vlastnost:"CITLIVÝ student, odpůrce války"},{jmeno:"Lucie",vlastnost:"NĚŽNÁ chudá malířka"}], vedlejsi: [{jmeno:"Filip (bratr Petra)",funkce:"VOJÁK, cynický realista"}] },
@@ -136,6 +151,7 @@ const booksData = [
   },
   {
     id: 16, title: "Romeo a Julie", author: "William Shakespeare",
+    obdobi: 1,
     info: { narodnost: "Anglický", roky: "1564-1616", smer: "RENESANCE, alžbětinské drama", vydani: "1597", druh: "DRAMA", zanr: "Milostná TRAGÉDIE, 5 jednání" },
     dej: ["Rody MONTEKŮ a KAPULETŮ se nenávidí","Romeo a Julie se ZAMILUJÍ na plese","Tajně se ODDAJÍ (bratr Vavřinec)","Romeo zabije TYBALTA, musí do vyhnanství","Julie předstírá SMRT uspávacím lektvarem","Romeo se OTRÁVÍ, Julie se PROBODNE"],
     postavy: { hlavni: [{jmeno:"Romeo",vlastnost:"VÁŠNIVÝ mladý Montek"},{jmeno:"Julie",vlastnost:"ODVÁŽNÁ mladá Kapuletová"}], vedlejsi: [{jmeno:"Bratr Vavřinec",funkce:"MNICH, tajně je oddá"},{jmeno:"Tybalt",funkce:"AGRESIVNÍ bratranec Julie"}] },
@@ -145,6 +161,7 @@ const booksData = [
   },
   {
     id: 17, title: "Vyšetřování ztráty třídní knihy", author: "Ladislav Smoljak, Zdeněk Svěrák",
+    obdobi: 4,
     info: { narodnost: "Čeští", roky: "Smoljak 1931-2010, Svěrák *1936", smer: "DIVADLO Járy Cimrmana", vydani: "1967", druh: "DRAMA", zanr: "Mystifikační KOMEDIE" },
     dej: ["PŘEDNÁŠKA o géniovi Járovi Cimrmanovi","Cimrman údajně vynalezl PEDAGOGICKÉ metody","Hra: INSPEKTOR přijde na venkovskou školu","Zjišťuje ZTRÁTU třídní knihy","Absurdní VÝSLECHY učitelů a žáků","Třídní kniha NENALEZENA, chaos pokračuje"],
     postavy: { hlavni: [{jmeno:"Inspektor",vlastnost:"BYROKRATICKÝ úředník"}], vedlejsi: [{jmeno:"Učitelé",funkce:"NESCHOPNÍ pedagogové"},{jmeno:"Přednášející",funkce:"CIMRMANOLOGOVÉ v semináři"}] },
@@ -154,6 +171,7 @@ const booksData = [
   },
   {
     id: 18, title: "O myších a lidech", author: "John Steinbeck",
+    obdobi: 3,
     info: { narodnost: "Americký", roky: "1902-1968", smer: "AMERICKÝ realismus, sociální próza", vydani: "1937", druh: "EPIKA", zanr: "Sociální NOVELA" },
     dej: ["George a Lennie hledají PRÁCI na farmách","Sní o vlastním RANČI s králíky","Lennie je SILNÝ ale mentálně zaostalý","Na farmě Lennie nechtěně ZABIJE štěně","Omylem ZLOMÍ vaz ženě majitelova syna","George Lennieho ZASTŘELÍ z milosrdenství"],
     postavy: { hlavni: [{jmeno:"George Milton",vlastnost:"CHYTRÝ, ochranitelský přítel"},{jmeno:"Lennie Small",vlastnost:"OBŘÍ, dobrosrdečný, mentálně zaostalý"}], vedlejsi: [{jmeno:"Slim",funkce:"MOUDRÝ kovboj, morální autorita"},{jmeno:"Curleyova žena",funkce:"OSAMĚLÁ, nešťastná oběť"}] },
@@ -163,6 +181,7 @@ const booksData = [
   },
   {
     id: 19, title: "Rozmarné léto", author: "Vladislav Vančura",
+    obdobi: 4,
     info: { narodnost: "Český", roky: "1891-1942", smer: "Česká AVANTGARDA, poetismus", vydani: "1926", druh: "EPIKA", zanr: "Lyrizovaná NOVELA" },
     dej: ["Tři přátelé TRÁVÍ líné léto u vody","Přijíždí kouzelník ARNOŠTEK s Annou","Anna OKOUZLÍ všechny tři muže","Každý se pokusí o SBLÍŽENÍ s Annou","Všichni NEÚSPĚŠNÍ, zesměšněni","Arnoštek ODJÍŽDÍ, vše se vrátí do kolejí"],
     postavy: { hlavni: [{jmeno:"Antonín Důra",vlastnost:"POHODLNÝ správce lázní"}], vedlejsi: [{jmeno:"Kanovník Roch",funkce:"DUCHOVNÍ, podlehne kouzlu Anny"},{jmeno:"Major Hugo",funkce:"DŮSTOJNÍK, další oběť Anny"},{jmeno:"Arnoštek",funkce:"KEJKLÍŘ s krásnou Annou"}] },
@@ -172,6 +191,7 @@ const booksData = [
   },
   {
     id: 20, title: "Noc na Karlštejně", author: "Jaroslav Vrchlický",
+    obdobi: 2,
     info: { narodnost: "Český", roky: "1853-1912", smer: "LUMÍROVCI, novoromantismus", vydani: "1884", druh: "DRAMA", zanr: "Veršovaná historická KOMEDIE, 4 jednání" },
     dej: ["Karel IV. ZAKÁŽE ženám vstup na Karlštejn","Královna ELIŠKA se tajně PŘEVLÉKNE","Purkrabí ARNOŠT bedlivě HLÍDÁ zákaz","Eliška prozrazena, ale Karel to TUŠÍ","Alžběta (Karlova žena) také PŘIJDE tajně","Karel ženám ODPUSTÍ, láska vítězí"],
     postavy: { hlavni: [{jmeno:"Karel IV.",vlastnost:"MOUDRÝ, tolerantní panovník"}], vedlejsi: [{jmeno:"Královna Eliška",funkce:"ZAMILOVANÁ, odvážná manželka"},{jmeno:"Purkrabí Arnošt",funkce:"PŘÍSNÝ strážce hradního řádu"}] },
@@ -187,14 +207,57 @@ const bookModal = document.getElementById('book-modal');
 const closeModalBtn = document.getElementById('close-modal');
 const modalBody = document.getElementById('modal-body');
 
-function initGrid() {
+// Mapování období na popisky
+var obdobiLabels = {
+    1: 'I. Do konce 18. st.',
+    2: 'II. 19. století',
+    3: 'III. Světová 20./21. st.',
+    4: 'IV. Česká 20./21. st.'
+};
+
+// Mapování období na barvy tagů
+var obdobiColors = {
+    1: '#8b5cf6',
+    2: '#0891b2',
+    3: '#059669',
+    4: '#d97706'
+};
+
+var currentFilter = null;
+
+function initGrid(filterObdobi) {
     booksGrid.innerHTML = '';
-    booksData.forEach(book => {
-        const card = document.createElement('div');
+    var filtered = booksData;
+    if (filterObdobi) {
+        filtered = booksData.filter(function(b) { return b.obdobi === filterObdobi; });
+    }
+    if (filtered.length === 0) {
+        booksGrid.innerHTML = '<p style="text-align:center;color:var(--text-secondary);grid-column:1/-1;padding:3rem;">Žádné knihy v tomto období.</p>';
+        return;
+    }
+    filtered.forEach(function(book) {
+        var card = document.createElement('div');
         card.classList.add('book-card');
-        card.innerHTML = '<div class="book-title">' + book.title + '</div><div class="book-author">' + book.author + '</div><div class="read-more">Detail knihy \u2192</div>';
-        card.addEventListener('click', () => openDetail(book));
+        var tagColor = obdobiColors[book.obdobi] || '#d4af37';
+        card.innerHTML = '<div class="book-obdobi-tag" style="background:' + tagColor + '15;color:' + tagColor + ';border-color:' + tagColor + '40">' + obdobiLabels[book.obdobi] + '</div>' +
+            '<div class="book-title">' + book.title + '</div>' +
+            '<div class="book-author">' + book.author + '</div>' +
+            '<div class="read-more">Detail knihy \u2192</div>';
+        card.addEventListener('click', function() { openDetail(book); });
         booksGrid.appendChild(card);
+    });
+}
+
+function setFilter(obdobi) {
+    currentFilter = obdobi;
+    initGrid(obdobi);
+    // Update active button state
+    var btns = document.querySelectorAll('.filter-btn');
+    btns.forEach(function(btn) {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-obdobi') === String(obdobi) || (obdobi === null && btn.getAttribute('data-obdobi') === 'all')) {
+            btn.classList.add('active');
+        }
     });
 }
 
@@ -259,4 +322,4 @@ function closeModal() {
 closeModalBtn.addEventListener('click', closeModal);
 bookModal.addEventListener('click', function(e) { if (e.target === bookModal) closeModal(); });
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && !bookModal.classList.contains('hidden')) closeModal(); });
-document.addEventListener('DOMContentLoaded', initGrid);
+document.addEventListener('DOMContentLoaded', function() { initGrid(null); });
