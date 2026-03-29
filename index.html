@@ -59,9 +59,19 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-content">
-            <p class="footer-title">Maturitní Knihy</p>
-            <p class="footer-sub">Digitální čtenářský deník — 20 vybraných děl k maturitě z češtiny</p>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <p class="footer-title">Maturitní Knihy</p>
+                <p class="footer-sub">Digitální čtenářský deník pro přípravu k maturitě.</p>
+                <p class="footer-author">Autor: <strong>Jakub Datel</strong></p>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-nav-title">Užitečné odkazy</p>
+                <a href="https://maturita.cermat.cz/" target="_blank" rel="noopener">Požadavky CERMAT</a>
+                <a href="https://www.spskladno.cz/" target="_blank" rel="noopener">Maturita — SPŠ a VOŠ Kladno</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
             <div class="footer-links">
                 <a href="https://github.com/Datlik/Maturitni-knizky" target="_blank" rel="noopener" aria-label="GitHub repozitář" class="footer-github-link">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -73,6 +83,12 @@
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" class="back-to-top" title="Zpět nahoru" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
 
     <!-- Modální okno (vyskakovací vrstva po kliknutí na knihu) -->
     <div id="book-modal" class="modal hidden">

@@ -851,4 +851,16 @@ document.addEventListener('keydown', function(e) {
         if (!bookModal.classList.contains('hidden')) closeModal();
     }
 });
-document.addEventListener('DOMContentLoaded', function() { renderGrid(); });
+document.addEventListener('DOMContentLoaded', function() { 
+    renderGrid(); 
+});
+
+// Back to top visibility
+window.addEventListener('scroll', function() {
+    var btn = document.getElementById('back-to-top');
+    if (window.scrollY > 300) {
+        btn.classList.add('visible');
+    } else {
+        btn.classList.remove('visible');
+    }
+});
