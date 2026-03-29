@@ -1020,9 +1020,22 @@ main {
     gap: 0.5rem;
 }
 .footer-links a {
-    color: var(--accent);
+    color: var(--text-secondary);
     text-decoration: none;
-    font-weight: 600;
+    transition: color 0.3s;
+}
+.footer-github-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-secondary);
+    transition: color 0.3s, transform 0.3s;
+}
+.footer-github-link:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+.footer-links span {
+    color: var(--text-secondary);
 }
 .footer-links a:hover {
     text-decoration: underline;
